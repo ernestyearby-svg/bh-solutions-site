@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pre-Approval – BH Solutions Auto Sales</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/bh_logo.png" alt="BH Solutions Auto Sales" class="navbar-logo" />
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="apply.html">Pre-Approval</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1 class="section-title">Pre-Approval Application</h1>
+
+      <p style="color: var(--muted); max-width: 640px; margin-bottom: 1.5rem;">
+        Fill out this form to start the pre-approval process. Your information goes directly to BH Solutions –
+        not to any outside lender. We’ll review it and contact you with options.
+      </p>
+
+      <form class="apply-form" name="bh-preapproval" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="bh-preapproval" />
+        <p style="display:none;">
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+
+        <!-- APPLICANT INFO -->
+        <h3>Applicant Info</h3>
+
+        <label for="fullName">Full Name</label>
+        <input id="fullName" name="fullName" type="text" required />
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" />
+
+        <label for="address">Street Address</label>
+        <input id="address" name="address" type="text" />
+
+        <label for="cityState">City &amp; State</label>
+        <input id="cityState" name="cityState" type="text" />
+
+        <label for="timeAtResidence">Time at Current Residence</label>
+        <input id="timeAtResidence" name="timeAtResidence" type="text" placeholder="e.g. 2 years, 6 months" />
+
+        <label for="employer">Employer</label>
+        <input id="employer" name="employer" type="text" />
+
+        <label for="timeAtJob">Time at Current Job</label>
+        <input id="timeAtJob" name="timeAtJob" type="text" />
+
+        <label for="monthlyIncome">Gross Monthly Income</label>
+        <input id="monthlyIncome" name="monthlyIncome" type="number" min="0" step="100" />
+
+        <label for="downPayment">Estimated Down Payment</label>
+        <input id="downPayment" name="downPayment" type="number" min="0" step="100" />
+
+        <label for="paymentRange">Comfortable Monthly Payment Range</label>
+        <input id="paymentRange" name="paymentRange" type="text" placeholder="$250 – $350" />
+
+        <!-- VEHICLE INFO -->
+        <h3>Vehicle Info</h3>
+
+        <label for="vehicleInterest">Vehicle You’re Interested In</label>
+        <input id="vehicleInterest" name="vehicleInterest" type="text" placeholder="Stock # or year/make/model" />
+
+        <label for="lookingFor">If we locate a vehicle, what are you looking for?</label>
+        <textarea id="lookingFor" name="lookingFor" placeholder="Type, budget, features, etc."></textarea>
+
+        <!-- NOTES -->
+        <h3>Notes</h3>
+
+        <label for="notes">Anything else we should know?</label>
+        <textarea id="notes" name="notes"></textarea>
+
+        <button type="submit" class="btn btn-primary" style="margin-top: 0.75rem;">Submit Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <span id="year"></span> © BH Solutions Auto Sales — Oroville, California.
+    <br />
+    Website built by <strong>Dynasty Works Studio</strong>.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const navToggle = document.getElementById("navToggle");
+    const navLinks  = document.getElementById("navLinks");
+
+    navToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>

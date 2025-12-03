@@ -1,0 +1,528 @@
+/* ========== BASE ========== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #05060a;
+  --bg-soft: #10141d;
+  --card: #141923;
+  --card-alt: #111520;
+  --text: #f5f5f5;
+  --muted: #b6bcc8;
+  --gold: #f6cf63;
+  --gold-soft: #b98a2a;
+  --accent: #222842;
+  --radius-lg: 18px;
+  --radius-sm: 999px;
+  --shadow-soft: 0 22px 60px rgba(0, 0, 0, 0.7);
+  --shadow-card: 0 18px 40px rgba(0, 0, 0, 0.65);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top left, #171b2a 0, #05060a 55%, #000 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Layout shell */
+
+.shell {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ========== HEADER / NAV ========== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(to bottom, #05060aee, #05060ab0, transparent);
+  backdrop-filter: blur(10px);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo img {
+  height: 64px;
+  width: auto;
+  display: block;
+}
+
+/* nav links */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--gold);
+}
+
+/* mobile nav toggle */
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 999px;
+}
+
+/* ========== HERO ========== */
+
+.hero {
+  padding: 3rem 0 3.5rem;
+}
+
+.hero-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  background: radial-gradient(circle at top left, #25293b 0, #06070d 55%, #05060a 100%);
+  border-radius: 32px;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  padding: 2.5rem 3rem;
+}
+
+.hero-shell-compact {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+}
+
+.hero-inner h1 {
+  font-size: 2.6rem;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+}
+
+.hero-inner p {
+  margin: 0 0 1.75rem;
+  color: var(--muted);
+  max-width: 32rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 28px;
+}
+
+/* badge */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.9rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--gold-soft);
+  color: var(--gold);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.9rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ========== BUTTONS & LINKS ========== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: #1b1405;
+}
+
+.btn-primary:hover {
+  background: #ffd76f;
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: var(--gold-soft);
+  color: var(--gold);
+}
+
+.btn-outline:hover {
+  background: rgba(246, 207, 99, 0.06);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* card link */
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.75rem;
+  font-weight: 500;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* ========== SECTIONS / CARDS ========== */
+
+.section {
+  padding: 3rem 0;
+}
+
+.section-alt {
+  background: radial-gradient(circle at top, #141928 0, #05060a 60%);
+}
+
+.section-title {
+  font-size: 1.9rem;
+  margin: 0 0 1.75rem;
+}
+
+/* generic card */
+
+.card,
+.service-card,
+.vehicle-card,
+.form-card {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  padding: 1.7rem 1.7rem;
+  box-shadow: var(--shadow-card);
+}
+
+/* grids */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.7rem;
+}
+
+.contact-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.7rem;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* inventory */
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.7rem;
+}
+
+.vehicle-image {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+}
+
+.vehicle-price {
+  font-weight: 700;
+  color: var(--gold);
+  margin-top: 0.25rem;
+}
+
+.vehicle-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.inventory-note {
+  margin-top: 2rem;
+  color: var(--muted);
+}
+
+/* forms */
+
+.form-card {
+  background: var(--card-alt);
+}
+
+.form-row {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-row label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.form-row input,
+.form-row textarea {
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #2a3142;
+  background: #080b12;
+  color: var(--text);
+  font: inherit;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: 1px solid var(--gold-soft);
+}
+
+.form-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.75rem;
+}
+
+/* ========== FOOTER ========== */
+
+.site-footer {
+  padding: 1.5rem 0 2rem;
+  border-top: 1px solid #171b26;
+  margin-top: 1rem;
+  background: #05060a;
+}
+
+.site-footer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 900px) {
+  .hero-shell {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem 2.5rem;
+  }
+
+  .hero-inner h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-image {
+    margin-top: 1.5rem;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 768px) {
+  /* mobile nav */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 64px;
+    right: 1.5rem;
+    background: #05060f;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.9);
+    padding: 0.75rem 1.25rem;
+    flex-direction: column;
+    gap: 0.75rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 0.18s ease, transform 0.18s ease;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding-top: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-inner h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 2.5rem 0;
+  }
+}/* ===== BH LAYOUT PHASE 2 – FILL SCREEN BETTER ===== */
+
+/* Make the content column wider on desktops */
+.page,
+.page-content,
+.main-content {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Give the hero section more presence on large screens */
+.hero {
+  min-height: 80vh;          /* taller hero */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Slightly larger base text on desktop for readability */
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Reduce excess vertical gaps between major sections */
+.section,
+.services-section,
+.about-section,
+.contact-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Make the logo in the top header feel stronger */
+.site-header .logo img {
+  max-height: 56px;   /* bump this up/down to taste */
+}
+
+/* Keep cards from shrinking too small on large monitors */
+.service-card,
+.info-card {
+  border-radius: 18px;
+}
+
+/* Prevent giant empty strips above/below content */
+body {
+  background-color: #05070d;   /* your dark background */
+}
+
+main {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+/* ================================
+   BH SOLUTIONS – DYNASTY FRAME
+   Gradient side panels + subtle grid
+   ================================ */
+
+body {
+  /* Make sure base background is deep midnight */
+  background-color: #05060a;
+  position: relative;
+}
+
+/* Premium gradient side panels (left + right) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  pointer-events: none;
+  z-index: -1;
+
+  /* Two separate gradients: one anchored left, one right */
+  background:
+    linear-gradient(to bottom, #0c0f16 0%, #06070d 40%, #000000 100%)
+      left top / 18% 100% no-repeat,
+    linear-gradient(to bottom, #0c0f16 0%, #090b12 40%, #000000 100%)
+      right top / 18% 100% no-repeat;
+}
+
+/* Ultra-subtle luxury grid over entire page */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 80px 80px, 80px 80px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BH Solutions – Inventory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="shell">
+      <nav class="main-nav">
+        <a href="index.html" class="logo">
+          <img src="assets/bh_header.png" alt="BH Solutions">
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="inventory.html" class="active">Inventory</a></li>
+          <li><a href="pre-approval.html">Pre-Approval</a></li>
+          <li><a href="real-estate.html">Real Estate</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- INVENTORY HERO -->
+    <section class="hero hero-inventory">
+      <div class="shell hero-shell hero-shell-compact">
+        <div class="hero-inner">
+          <h1>Inventory</h1>
+          <p>
+            Browse our current selection of quality pre-owned vehicles at BH Solutions.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="assets/heroes/hero_inventory.png" alt="BH Solutions vehicle lineup">
+        </div>
+      </div>
+    </section>
+
+    <!-- INVENTORY GRID -->
+    <section class="section">
+      <div class="shell">
+        <h2 class="section-title">Browse Our Inventory</h2>
+
+        <div class="inventory-grid">
+
+          <article class="vehicle-card">
+            <img src="assets/vehicles/inv_1.png" alt="Vehicle 1" class="vehicle-image">
+            <div class="vehicle-body">
+              <h3>2021 Ford F-150</h3>
+              <p class="vehicle-price">$21,950</p>
+              <p class="vehicle-meta">Clean title • 77k miles • 4x4</p>
+              <button class="btn btn-outline btn-full">Schedule a test drive</button>
+            </div>
+          </article>
+
+          <article class="vehicle-card">
+            <img src="assets/vehicles/inv_2.png" alt="Vehicle 2" class="vehicle-image">
+            <div class="vehicle-body">
+              <h3>2019 Honda CR-V</h3>
+              <p class="vehicle-price">$18,500</p>
+              <p class="vehicle-meta">One owner • AWD • Great MPG</p>
+              <button class="btn btn-outline btn-full">Schedule a test drive</button>
+            </div>
+          </article>
+
+          <article class="vehicle-card">
+            <img src="assets/vehicles/inv_3.png" alt="Vehicle 3" class="vehicle-image">
+            <div class="vehicle-body">
+              <h3>2018 Chevy Silverado</h3>
+              <p class="vehicle-price">$23,900</p>
+              <p class="vehicle-meta">Crew cab • Tow package</p>
+              <button class="btn btn-outline btn-full">Schedule a test drive</button>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="inventory-note">
+          Inventory changes daily. Call (530) 420-1863 for the latest arrivals or to ask
+          about a specific vehicle.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <p>© <span id="year"></span> BH Solutions – Oroville, California.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

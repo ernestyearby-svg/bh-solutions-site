@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BH Solutions – Pre-Approval</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="shell">
+      <nav class="main-nav">
+        <a href="index.html" class="logo">
+          <img src="assets/bh_header.png" alt="BH Solutions">
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="pre-approval.html" class="active">Pre-Approval</a></li>
+          <li><a href="real-estate.html">Real Estate</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-alt">
+      <div class="shell split">
+        <div>
+          <h1 class="section-title">Start Pre-Approval</h1>
+          <p>
+            Complete the simple form below to start the pre-approval process for your
+            next vehicle. A BH Solutions team member will contact you to review options
+            and next steps.
+          </p>
+          <p>
+            You can also call us directly at <strong>(530) 420-1863</strong> if you
+            prefer to complete pre-approval by phone.
+          </p>
+        </div>
+
+        <form class="card form-card">
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" required>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" type="email">
+          </div>
+
+          <div class="form-row">
+            <label for="details">Vehicle or notes</label>
+            <textarea id="details" rows="4"
+              placeholder="Tell us what you're looking for, or your current situation."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            Submit Pre-Approval Request
+          </button>
+
+          <p class="form-note">
+            This form sends your information to BH Solutions so our team can contact you.
+            It does not affect your credit score.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <p>© <span id="year"></span> BH Solutions – Oroville, California.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
