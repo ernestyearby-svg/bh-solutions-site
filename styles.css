@@ -526,3 +526,46 @@ body::after {
     linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
   background-size: 80px 80px, 80px 80px;
 }
+.inventory {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.inventory h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.inventory-subtitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.inventory-table thead {
+  background: #111;
+  color: #fff;
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.inventory-table tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+.inventory-table tr:hover {
+  background: #eaeaea;
+}
