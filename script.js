@@ -1,17 +1,20 @@
-// Mobile nav toggle
-document.addEventListener("DOMContentLoaded", () => {
-  const navToggle = document.getElementById("navToggle");
-  const navLinks = document.getElementById("navLinks");
+// Mobile Navigation Toggle
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
 
-  if (navToggle && navLinks) {
+if (navToggle) {
     navToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
+        navLinks.classList.toggle("open");
     });
-  }
+}
 
-  // Footer year
-  const yearSpan = document.getElementById("year");
-  if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
-  }
+// Form Auto-Scroll (optional)
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+
+    if (form) {
+        form.addEventListener("submit", () => {
+            console.log("Real Estate form submitted.");
+        });
+    }
 });
