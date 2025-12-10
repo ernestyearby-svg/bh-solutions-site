@@ -1,154 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>BH Solutions – Alliance Property Network Real Estate Referrals</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>BH Solutions – Alliance Property Network Real Estate Referrals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Same Adobe kit link used on index (optional) -->
-  <!-- <link rel="stylesheet" href="https://use.typekit.net/XXXXX.css"> -->
-
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
-  <header class="site-header">
+<header class="site-header">
     <div class="shell">
-      <nav class="main-nav">
-        <a href="index.html" class="logo">
-          <img src="assets/bh_header.png" alt="BH Solutions">
-        </a>
+        <nav class="main-nav">
+            <a href="index.html" class="logo">
+                <img src="assets/bh_header.png" alt="BH Solutions">
+            </a>
 
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span><span></span>
+            </button>
 
-   <ul class="nav-links" id="navLinks">
-  <li><a href="index.html">Services</a></li>
-  <li><a href="inventory.html">Inventory</a></li>
-  <li><a href="pre-approval.html">Pre-Approval</a></li>
-  <li><a href="real-estate.html">Real Estate</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="index.html#contact">Contact</a></li>
-</ul>
->
-      </nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Services</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="pre-approval.html">Pre-Approval</a></li>
+                <li><a href="real-estate.html" class="active">Real Estate</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-  </header>
+</header>
 
-  <main>
-    <!-- APN HERO -->
-    <section class="section section-alt">
-      <div class="shell split">
-        <div>
-          <h1 class="section-title">Alliance Property Network Real Estate Referrals</h1>
-          <p>
-            BH Solutions is more than an automotive and transportation center — we are also
-            a real estate liaison through <strong>Alliance Property Network (APN)</strong>.
-          </p>
-          <p>
-            As an APN partner, BH Solutions connects clients with trusted, licensed real
-            estate professionals in all 50 states for:
-          </p>
-          <ul>
-            <li>Buying or selling a home</li>
-            <li>Investment and rental properties</li>
-            <li>Relocation and out-of-state moves</li>
-            <li>First-time homebuyers who need guidance</li>
-          </ul>
-          <p>
-            You work with BH Solutions locally, and we introduce you to a vetted APN
-            partner agent in the market where you need help. There is no extra cost to you —
-            our referral relationship is handled behind the scenes.
-          </p>
-        </div>
 
-        <div class="card" style="text-align:center;">
-          <img src="assets/apn_logo.png"
-               alt="Alliance Property Network"
-               style="max-width:260px;width:100%;height:auto;margin-bottom:1.25rem;">
-          <p>
-            <strong>How it works:</strong>
-          </p>
-          <ol style="text-align:left;padding-left:1.1rem;">
-            <li>Tell us where you’re buying, selling, or relocating.</li>
-            <li>We match you with a licensed APN partner agent in that area.</li>
-            <li>We make a warm introduction and stay available as your local contact.</li>
-          </ol>
-          <a href="#referral-form" class="btn btn-primary btn-full">
-            Request a Real Estate Referral
-          </a>
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="section">
+        <div class="shell split">
+            <div>
+                <h2 class="section-title">Alliance Property Network Real Estate Referrals</h2>
+
+                <p>BH Solutions is more than automotive and transportation — we are also a real estate liaison through 
+                <strong>Alliance Property Network (APN)</strong>.</p>
+
+                <p>As an APN partner, BH Solutions connects clients with trusted, licensed real estate professionals in all 50 states for:</p>
+
+                <ul>
+                    <li>Buying or selling a home</li>
+                    <li>Investment and rental properties</li>
+                    <li>Relocation and out-of-state moves</li>
+                    <li>First-time homebuyers who need guidance</li>
+                </ul>
+
+                <p>You work with BH Solutions locally, and we introduce you to a vetted APN partner agent in the market where you need help. 
+                No extra cost to you — the referral process is handled behind the scenes.</p>
+            </div>
+
+            <!-- HOW IT WORKS CARD -->
+            <div class="card">
+                <img src="assets-apn-logo.png" alt="Alliance Property Network" class="apn-logo">
+
+                <h3>How it works:</h3>
+
+                <ol>
+                    <li>Tell us where you’re buying, selling, or relocating.</li>
+                    <li>We match you with a licensed APN partner agent in that area.</li>
+                    <li>The APN agent contacts you, provides guidance, and stays available throughout your move.</li>
+                </ol>
+
+                <a href="#referral-form" class="button">Request a Real Estate Referral</a>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- SIMPLE REFERRAL FORM (same style as pre-approval) -->
-    <section id="referral-form" class="section">
-      <div class="shell split">
-        <div>
-          <h2 class="section-title">Request a Real Estate Referral</h2>
-          <p>
-            Use this form to tell BH Solutions what you need help with. A member of our
-            team will contact you, confirm details, and then connect you with an APN
-            partner agent in the right city and state.
-          </p>
+    <!-- REFERRAL FORM -->
+    <section class="section dark" id="referral-form">
+        <div class="shell">
+            <h2 class="section-title">Request a Real Estate Referral</h2>
+
+            <p>Use this form to tell BH Solutions what you need help with. Our team will contact you, confirm details, and connect you with an APN partner agent in your city and state.</p>
+
+            <form class="contact-form">
+                <div class="form-grid">
+                    <input type="text" placeholder="Full Name*" required>
+                    <input type="tel" placeholder="Phone*" required>
+                    <input type="email" placeholder="Email*" required>
+                    <input type="text" placeholder="City & State*" required>
+                </div>
+
+                <textarea placeholder="What are you looking to do? Buy, sell, invest, relocate, first-time buyer, etc." rows="5"></textarea>
+
+                <button type="submit" class="button">Submit Real Estate Request</button>
+
+                <p class="disclaimer">
+                    This form sends your information to BH Solutions so our team can contact you and coordinate an APN referral. 
+                    It does not create an agency relationship or affect your credit.
+                </p>
+            </form>
         </div>
-
-        <form class="card form-card">
-          <div class="form-row">
-            <label for="re-name">Full Name</label>
-            <input id="re-name" type="text" required>
-          </div>
-
-          <div class="form-row">
-            <label for="re-phone">Phone</label>
-            <input id="re-phone" type="tel" required>
-          </div>
-
-          <div class="form-row">
-            <label for="re-email">Email</label>
-            <input id="re-email" type="email">
-          </div>
-
-          <div class="form-row">
-            <label for="re-location">City &amp; State</label>
-            <input id="re-location" type="text" placeholder="Example: Phoenix, AZ" required>
-          </div>
-
-          <div class="form-row">
-            <label for="re-details">What are you looking to do?</label>
-            <textarea id="re-details" rows="4"
-              placeholder="Buy, sell, invest, relocate, first-time buyer, etc."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-full">
-            Submit Real Estate Request
-          </button>
-
-          <p class="form-note">
-            This form sends your information to BH Solutions so our team can contact you
-            and coordinate an APN referral. It does not create an agency relationship or
-            affect your credit.
-          </p>
-        </form>
-      </div>
     </section>
-  </main>
 
-<footer class="site-footer">
-  <div class="shell">
-    <p>BH Solutions · 4881 Feather River Blvd, Ste 1A, Oroville, CA 95965</p>
-    <p>
-      Phone: (530) 420-1863 ·
-      Email: <a href="mailto:bhsolutions321@gmail.com">bhsolutions321@gmail.com</a>
-    </p>
-    <p>
-      California Dealer License #45657 ·
-      Real Estate Services: Ron Brown – CA DRE #02010327
-    </p>
-  </div>
-</footer>
+</main>
 
-
-
+</body>
+</html>
