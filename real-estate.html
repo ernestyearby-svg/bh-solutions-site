@@ -76,34 +76,49 @@
         </div>
     </section>
 
-    <!-- REFERRAL FORM -->
-    <section class="section dark" id="referral-form">
-        <div class="shell">
-            <h2 class="section-title">Request a Real Estate Referral</h2>
+  <!-- REFERRAL FORM -->
+<section class="section dark" id="referral-form">
+    <div class="shell">
 
-            <p>Use this form to tell BH Solutions what you need help with. Our team will contact you, confirm details, and connect you with an APN partner agent in your city and state.</p>
+        <h2 class="section-title">Request a Real Estate Referral</h2>
 
-            <form class="contact-form">
-    <div class="form-grid">
-        <input type="text" placeholder="Full Name*" required>
-        <input type="tel" placeholder="Phone*" required>
-        <input type="email" placeholder="Email*" required>
-        <input type="text" placeholder="City & State*" required>
+        <p>
+            Use this form to tell BH Solutions what you need help with. Our team will contact you,
+            confirm details, and connect you with an APN partner agent in the right city and state.
+        </p>
+
+        <form action="https://formsubmit.co/bhsolutions321@gmail.com" method="POST" class="contact-form">
+
+            <!-- FormSubmit Settings -->
+            <input type="hidden" name="_subject" value="New Real Estate Referral Request">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-grid">
+                <input type="text" name="Full Name" placeholder="Full Name*" required>
+                <input type="tel" name="Phone" placeholder="Phone*" required>
+                <input type="email" name="Email" placeholder="Email*" required>
+                <input type="text" name="City & State" placeholder="City & State*" required>
+            </div>
+
+            <textarea 
+                name="What Are You Looking To Do?"
+                placeholder="Buy, sell, invest, relocate, first-time buyer, etc."
+                required
+            ></textarea>
+
+            <button type="submit" class="btn btn-primary">Submit Real Estate Request</button>
+
+        </form>
+
+        <p class="form-disclaimer">
+            This form sends your information to BH Solutions so our team can contact you and coordinate 
+            an APN referral. It does not create an agency relationship or affect your credit.
+        </p>
+
     </div>
-</form>
+</section>
 
-
-                <textarea placeholder="What are you looking to do? Buy, sell, invest, relocate, first-time buyer, etc." rows="5"></textarea>
-
-                <button type="submit" class="button">Submit Real Estate Request</button>
-
-                <p class="disclaimer">
-                    This form sends your information to BH Solutions so our team can contact you and coordinate an APN referral. 
-                    It does not create an agency relationship or affect your credit.
-                </p>
-            </form>
-        </div>
-    </section>
 
 </main>
 
