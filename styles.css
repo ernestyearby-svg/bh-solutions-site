@@ -692,6 +692,44 @@ img[alt="Alliance Property Network logo"] {
   text-decoration: none;
   color: inherit;
 }
+/* ============================
+   PARTNER LOGO FIXES (BIGGER)
+   ============================ */
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.logo-tile {
+  width: 180px;           /* INCREASE TILE SIZE */
+  height: 180px;
+  background: #fff;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.12);
+}
+
+.logo-tile img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;    /* Make logos look clean */
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+  .logo-tile {
+    width: 140px;
+    height: 140px;
+  }
+}
+
 
 
 
