@@ -657,6 +657,42 @@ img[alt="Alliance Property Network logo"] {
     height: 48px;
   }
 }
+/* ===================== */
+/*  LOGO SIZE ADJUSTMENTS */
+/* ===================== */
+
+/* Header brand logo (top left) */
+.nav-logo {
+  display: block;
+  height: 68px;         /* bigger on desktop */
+}
+
+/* Smaller on phones */
+@media (max-width: 768px) {
+  .nav-logo {
+    height: 52px;
+  }
+}
+
+/* Partner tiles on the home/services section */
+.partner-grid-logo {
+  width: auto;
+  height: 80px;         /* larger, but still balanced */
+}
+
+/* Contact section logos at the bottom */
+.contact-logos img {
+  height: 52px;
+  width: auto;
+  margin-right: 1.75rem;
+}
+
+/* Make clickable partner cards have no underline */
+.partner-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 
 
