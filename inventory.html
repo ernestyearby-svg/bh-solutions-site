@@ -13,15 +13,15 @@
       <header class="site-header">
         <div class="nav-bar">
           <a href="index.html" class="nav-brand">
-            <img src="bh-logo-horizontal-gold.png" alt="BH Solutions logo" />
+            <img src="assets/bh-logo-horizontal-gold.png" alt="BH Solutions logo" class="nav-logo" />
+            <span class="nav-brand-text">Used Vehicles &amp; Transport</span>
           </a>
-
           <nav class="nav-links">
-            <a href="index.html#services" class="nav-link">Services</a>
-            <a href="inventory.html" class="nav-link nav-link-active">Inventory</a>
-            <a href="index.html#preapproval" class="nav-link">Pre-Approval</a>
-            <a href="real-estate.html" class="nav-link">Real Estate</a>
-            <a href="index.html#contact" class="nav-link">Contact</a>
+            <a href="index.html">Services</a>
+            <a href="inventory.html" class="nav-link-active">Inventory</a>
+            <a href="index.html#preapproval">Pre-Approval</a>
+            <a href="real-estate.html">Real Estate</a>
+            <a href="index.html#contact">Contact</a>
           </nav>
         </div>
       </header>
@@ -29,114 +29,245 @@
       <main class="site-main">
         <!-- HERO -->
         <section class="hero">
-          <div class="hero-shell">
+          <div class="hero-shell hero-shell-compact">
             <div class="hero-content">
               <div class="hero-eyebrow">Used Vehicle Inventory</div>
-              <h1 class="hero-title">
-                Quality Trucks &amp; Reliable Vehicles
-              </h1>
+              <h1 class="hero-title">Quality Trucks &amp; Reliable Vehicles</h1>
               <p class="hero-body">
-                Dependable pre-owned vehicles — clean titles and ready for Oroville’s roads.
-                Inventory changes weekly, so call or text to confirm the most current list.
+                Dependable pre-owned vehicles — clean titles and ready for Oroville’s roads. Inventory
+                changes weekly, so call or text to confirm the most current list.
               </p>
-
               <div class="hero-actions">
-                <a href="#inventory-info" class="btn btn-gold">View Current Snapshot</a>
+                <a href="#inventory" class="btn btn-gold">View Current Snapshot</a>
                 <a href="tel:+15304201863" class="btn btn-ghost">Call for Today’s List</a>
               </div>
             </div>
 
             <figure class="hero-media">
-              <img src="bh-hero-chevy.png" alt="BH Solutions black truck hero image" />
+              <img src="assets/bh-hero-chevy.png" alt="BH Solutions black truck hero image" />
             </figure>
           </div>
         </section>
 
-        <!-- INVENTORY INFO -->
-        <section id="inventory-info" class="section section-split">
-          <div class="section-shell split-shell">
-            <div class="split-column">
-              <h2 class="section-title">How Inventory Works</h2>
-              <p class="section-subtitle">
-                BH Solutions focuses on clean titles and practical vehicles that fit the
-                community — especially trucks, SUVs, and dependable daily drivers.
-              </p>
+        <!-- INVENTORY GRID -->
+        <section id="inventory" class="section">
+          <div class="section-shell">
+            <div class="section-header">
+              <h2 class="section-title">Current Lot Snapshot</h2>
+            </div>
+            <p class="inventory-intro">
+              The vehicles below are a working example of your lot layout. Update year, make, model, price,
+              and notes as needed — the structure is ready for 17 active units.
+            </p>
 
-              <ul class="bullet-list">
-                <li>Inventory rotates weekly based on trades, auctions, and private sales.</li>
-                <li>Most vehicles are pre-inspected before they hit the lot.</li>
-                <li>We’ll text photos and basic details if you’re out of town.</li>
-              </ul>
+            <div class="vehicle-grid">
+              <!-- 1–17 (editable text only) -->
+              <article class="vehicle-card">
+                <div class="vehicle-title">2017 Chevy Silverado 1500 LT Z71</div>
+                <div class="vehicle-meta">4x4 · Crew Cab · 98,200 miles</div>
+                <div class="vehicle-meta"><strong>$27,995</strong> · Stock #BHS-001</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Truck</span>
+                  <span class="vehicle-tag">4x4</span>
+                  <span class="vehicle-tag">Finance Available</span>
+                </div>
+              </article>
 
-              <p class="section-note">
-                Because inventory changes quickly, use this page as a guide, then call or
-                text to confirm what’s on the ground before you drive over.
-              </p>
+              <article class="vehicle-card">
+                <div class="vehicle-title">2015 Ford F-150 XLT</div>
+                <div class="vehicle-meta">SuperCrew · 2WD · 120,500 miles</div>
+                <div class="vehicle-meta"><strong>$22,495</strong> · Stock #BHS-002</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Truck</span>
+                  <span class="vehicle-tag">EcoBoost</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2018 Ram 1500 Big Horn</div>
+                <div class="vehicle-meta">Crew Cab · 4x4 · 88,300 miles</div>
+                <div class="vehicle-meta"><strong>$28,995</strong> · Stock #BHS-003</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Truck</span>
+                  <span class="vehicle-tag">Hemi</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2016 Chevy Tahoe LT</div>
+                <div class="vehicle-meta">SUV · 3rd Row · 110,250 miles</div>
+                <div class="vehicle-meta"><strong>$26,995</strong> · Stock #BHS-004</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">SUV</span>
+                  <span class="vehicle-tag">Family</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2014 Jeep Grand Cherokee Limited</div>
+                <div class="vehicle-meta">4x4 · 132,400 miles</div>
+                <div class="vehicle-meta"><strong>$16,995</strong> · Stock #BHS-005</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">SUV</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2013 Chevy Silverado 2500HD</div>
+                <div class="vehicle-meta">Long Bed · Gas · 151,000 miles</div>
+                <div class="vehicle-meta"><strong>$19,995</strong> · Stock #BHS-006</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Work Truck</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2017 Nissan Altima SV</div>
+                <div class="vehicle-meta">Sedan · 89,500 miles</div>
+                <div class="vehicle-meta"><strong>$13,995</strong> · Stock #BHS-007</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Sedan</span>
+                  <span class="vehicle-tag">Gas Saver</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2016 Honda Civic EX</div>
+                <div class="vehicle-meta">Sedan · 102,800 miles</div>
+                <div class="vehicle-meta"><strong>$14,495</strong> · Stock #BHS-008</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Sedan</span>
+                  <span class="vehicle-tag">Economy</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2019 Toyota Corolla LE</div>
+                <div class="vehicle-meta">Sedan · 72,600 miles</div>
+                <div class="vehicle-meta"><strong>$18,495</strong> · Stock #BHS-009</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Sedan</span>
+                  <span class="vehicle-tag">Low Miles</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2015 Chevy Equinox LT</div>
+                <div class="vehicle-meta">Crossover · 118,900 miles</div>
+                <div class="vehicle-meta"><strong>$11,995</strong> · Stock #BHS-010</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Crossover</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2012 Ford Fusion SE</div>
+                <div class="vehicle-meta">Sedan · 146,000 miles</div>
+                <div class="vehicle-meta"><strong>$8,495</strong> · Stock #BHS-011</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Budget</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2014 Dodge Journey SXT</div>
+                <div class="vehicle-meta">3rd Row · 130,750 miles</div>
+                <div class="vehicle-meta"><strong>$10,995</strong> · Stock #BHS-012</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Family</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2011 Chevy Silverado 1500 Work Truck</div>
+                <div class="vehicle-meta">Regular Cab · Long Bed · 175,000 miles</div>
+                <div class="vehicle-meta"><strong>$9,995</strong> · Stock #BHS-013</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Work Truck</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2018 Hyundai Elantra SEL</div>
+                <div class="vehicle-meta">Sedan · 80,200 miles</div>
+                <div class="vehicle-meta"><strong>$15,495</strong> · Stock #BHS-014</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Sedan</span>
+                  <span class="vehicle-tag">Gas Saver</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2016 Kia Sorento LX</div>
+                <div class="vehicle-meta">SUV · 3rd Row · 115,300 miles</div>
+                <div class="vehicle-meta"><strong>$13,995</strong> · Stock #BHS-015</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">SUV</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">2013 Toyota Tacoma SR5</div>
+                <div class="vehicle-meta">Access Cab · 4x4 · 142,800 miles</div>
+                <div class="vehicle-meta"><strong>$21,995</strong> · Stock #BHS-016</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">Truck</span>
+                  <span class="vehicle-tag">4x4</span>
+                </div>
+              </article>
+
+              <article class="vehicle-card">
+                <div class="vehicle-title">Coming Soon – Trade-Ins &amp; New Arrivals</div>
+                <div class="vehicle-meta">Fresh units arriving weekly.</div>
+                <div class="vehicle-meta"><strong>Call for pricing</strong> · Stock #BHS-017</div>
+                <div class="vehicle-tag-row">
+                  <span class="vehicle-tag">New Arrival</span>
+                </div>
+              </article>
             </div>
 
-            <div class="split-column split-highlight">
-              <h3 class="mini-title">Typical Vehicles You’ll See</h3>
-              <ul class="checklist">
-                <li>Half-ton and heavy-duty pickups</li>
-                <li>Work trucks &amp; utility rigs</li>
-                <li>Reliable commuter cars and SUVs</li>
-                <li>Occasional specialty or fleet units</li>
-              </ul>
-
-              <h3 class="mini-title">Have a Specific Need?</h3>
-              <p>
-                Let BH Solutions know what you’re looking for — budget, year range, and
-                type of vehicle. If it’s not on the lot now, we can watch for it and
-                reach out when something fits.
-              </p>
-            </div>
+            <p class="inventory-intro">
+              Need today’s exact list? Call or text <strong>(530) 420-1863</strong> and ask for the latest
+              inventory printout.
+            </p>
           </div>
         </section>
 
         <!-- CONTACT / LICENSING -->
-        <section class="section section-contact">
-          <div class="section-shell split-shell">
-            <div class="split-column">
-              <h2 class="section-title">Ready to See a Vehicle?</h2>
-              <p class="section-subtitle">
-                The fastest way to confirm inventory is to call, text, or stop by.
-                BH Solutions can also help you start pre-approval so you know what works
-                before you visit.
+        <section class="section">
+          <div class="card-row">
+            <div class="info-card">
+              <h3>Ready to See a Vehicle?</h3>
+              <p>
+                The fastest way to confirm inventory is to call, text, or stop by. BH Solutions can also help
+                you start pre-approval so you know what works before you visit.
               </p>
-
-              <div class="contact-block">
-                <h3 class="mini-title">BH Solutions</h3>
-                <p>
-                  4881 Feather River Blvd, Ste 1A<br />
-                  Oroville, CA 95965
-                </p>
-                <p>
-                  <strong>Phone:</strong> (530) 420-1863<br />
-                  <strong>Email:</strong> bhsoutions321@gmail.com
-                </p>
-              </div>
-
-              <div class="contact-logos">
-                <img src="bh-logo-horizontal-gold.png" alt="BH Solutions logo" />
-                <img src="logo-uhaul-tile.png" alt="U-Haul logo" />
-                <img src="logo-interlock-gold.png" alt="Ignition Interlock Services logo" />
+              <p><strong>BH Solutions</strong></p>
+              <p>
+                4881 Feather River Blvd, Ste 1A<br />
+                Oroville, CA 95965
+              </p>
+              <p>
+                <strong>Phone:</strong> (530) 420-1863<br />
+                <strong>Email:</strong> bhsoutions321@gmail.com
+              </p>
+              <div class="logo-row">
+                <img src="assets/bh-header-gold.png" alt="BH Solutions logo" />
+                <img src="assets/logo-uhaul-tile.png" alt="U-Haul logo" />
+                <img src="assets/logo-interlock-gold.png" alt="Ignition Interlock Services logo" />
               </div>
             </div>
 
-            <div class="split-column split-highlight">
-              <h3 class="mini-title">Licensing &amp; Real Estate</h3>
+            <div class="lic-card">
+              <h3>Licensing &amp; Real Estate</h3>
               <p>
-                For home purchases, sales, or relocations, BH Solutions partners with
-                Alliance Property Network to connect you to licensed agents.
+                For home purchases, sales, or relocations, BH Solutions partners with Alliance Property
+                Network to connect you to licensed agents.
               </p>
-
-              <p class="license-text">
-                CA Dealer License #45657<br />
-                Real Estate Services: Ron Brown — CA DRE #02010327
-              </p>
-
-              <div class="license-logos">
-                <img src="apn-logo-horizontal-gold.png" alt="Alliance Property Network logo" />
+              <p>CA Dealer License #45657</p>
+              <p>Real Estate Services: Ron Brown — CA DRE #02010327</p>
+              <div class="logo-row">
+                <img src="assets/assets-apn-gold.png" alt="Alliance Property Network logo" />
               </div>
             </div>
           </div>
@@ -145,16 +276,14 @@
 
       <!-- FOOTER -->
       <footer class="site-footer">
-        <div class="footer-shell">
-          <p class="footer-meta">
-            BH Solutions · 4881 Feather River Blvd, Ste 1A, Oroville, CA 95965 ·
-            California Dealer License #45657 · Real Estate Services: Ron Brown —
-            CA DRE #02010327
-          </p>
-          <p class="footer-powered">
-            <span>POWERED BY</span>
-            <span class="footer-brand">DYNASTY WORKS STUDIO</span>
-          </p>
+        <div class="footer-row">
+          <div class="footer-main">
+            BH Solutions · 4881 Feather River Blvd, Ste 1A, Oroville, CA 95965 · California Dealer License
+            #45657 · Real Estate Services: Ron Brown — CA DRE #02010327
+          </div>
+          <div class="footer-powered">
+            Powered by <span>Dynasty Works Studio</span>
+          </div>
         </div>
       </footer>
     </div>
