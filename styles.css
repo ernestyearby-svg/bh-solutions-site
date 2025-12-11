@@ -108,7 +108,6 @@ body {
   background: var(--text);
   border-radius: 999px;
 }
-
 /* ========== HERO ========== */
 
 .hero {
@@ -150,25 +149,23 @@ body {
   border-radius: 28px;
 }
 
-/* badge */
+/* Responsive hero */
 
-.badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.25rem 0.9rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--gold-soft);
-  color: var(--gold);
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 0.9rem;
+@media (max-width: 768px) {
+  .hero-shell {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-image {
+    margin-top: 1.5rem;
+  }
+
+  .hero-inner h1 {
+    font-size: 2.1rem;
+  }
 }
 
-.hero-actions {
-  display: flex;
-  gap: 1rem;
-}
 
 /* ========== BUTTONS & LINKS ========== */
 
@@ -569,3 +566,4 @@ body::after {
 .inventory-table tr:hover {
   background: #eaeaea;
 }
+
