@@ -560,4 +560,20 @@ body {
     align-items: flex-start;
   }
 }
+/* ============================
+   HEADER LOGO SIZE — BH SOLUTIONS
+   ============================ */
+
+.nav-brand img {
+  display: block;
+  height: 60px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .nav-brand img {
+    height: 44px;
+  }
+}
+
 
