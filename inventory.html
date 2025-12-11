@@ -1,151 +1,304 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>BH Solutions – Inventory</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>BH Solutions • Truck Inventory</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Current BH Solutions inventory — sample trucks, work units, and yard-ready rigs available by arrangement."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <!-- HEADER -->
+      <header class="site-header">
+        <div class="brand-lockup">
+          <div class="brand-logo">BH</div>
+          <div class="brand-text">
+            <span>BH Solutions</span>
+            <span>Truck • EV • Real Estate</span>
+          </div>
+        </div>
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/inventory.html" class="is-active">Inventory</a>
+          <a href="/real-estate.html">Real Estate</a>
+        </nav>
+      </header>
 
-  <header class="site-header">
-    <div class="shell">
-      <nav class="main-nav">
-        <a href="index.html" class="logo">
-          <img src="assets/bh_header.png" alt="BH Solutions">
-        </a>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-shell hero-shell-compact">
+          <div class="hero-inner">
+            <div class="hero-badge-row">
+              <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                <span>Live inventory examples</span>
+              </div>
+              <div class="hero-badge-flag">Dealer &amp; fleet focused</div>
+            </div>
 
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
+            <h1>Work-ready trucks &amp; yard-based units.</h1>
 
-      <ul class="nav-links" id="navLinks">
-  <li><a href="index.html">Services</a></li>
-  <li><a href="inventory.html">Inventory</a></li>
-  <li><a href="pre-approval.html">Pre-Approval</a></li>
-  <li><a href="real-estate.html">Real Estate</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="index.html#contact">Contact</a></li>
-</ul>
+            <p>
+              Below is a sample of the kind of trucks we locate, store, and
+              manage through the BH Solutions yard. Units rotate — use the form
+              to share what you need.
+            </p>
 
-      </nav>
-    </div>
-  </header>
+            <div class="hero-actions">
+              <a href="#inventory-grid" class="btn btn-primary">
+                Scroll to inventory
+              </a>
+              <a href="#inventory-contact" class="btn btn-outline">
+                Tell us what you need
+              </a>
+            </div>
+          </div>
 
-  <main>
-<!-- INVENTORY HERO (OPTIMIZED) -->
-<section class="hero hero-inventory">
-  <div class="shell hero-shell hero-shell-compact hero-light">
-    
-    <div class="hero-inner">
-      <span class="badge">Used Vehicle Inventory</span>
+          <div class="hero-media">
+            <!-- Inventory hero: black Ram -->
+            <img
+              src="/images/inventory-hero-ram-black.jpg"
+              alt="Black Ram truck at BH Solutions yard"
+            />
+            <div class="hero-media-overlay">
+              <div>
+                <strong>Heavy-duty inventory partner</strong><br />
+                <span>From half-tons to diesel 2500/3500 work rigs.</span>
+              </div>
+              <span>Units rotate • Samples shown</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <h1>Quality Trucks & Reliable Cars</h1>
-
-      <p>
-        Explore our curated selection of dependable pre-owned vehicles—clean titles,
-        inspected, and ready for Oroville’s roads.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#inventory-list" class="btn btn-primary">View Inventory</a>
-        <a href="apply.html" class="btn btn-outline">Apply for Financing</a>
-      </div>
-    </div>
-
-    <div class="hero-image">
-      <img src="assets/hero_ram.png" alt="BH Solutions Ram Truck">
-    </div>
-
-  </div>
-</section>
-
-    </div>
-
-    <div class="hero-image">
-      <img src="assets/hero_ram.png" alt="BH Solutions Ram truck hero">
-    </div>
-
-  </div>
-</section>
-
-
-
-    <!-- INVENTORY GRID -->
-    <section class="section">
-      <div class="shell">
-        <h2 class="section-title">Browse Our Inventory</h2>
-
-        <div class="inventory-grid">
-
-        <section id="inventory" class="inventory">
-  <h2>Current Inventory</h2>
-  <p class="inventory-subtitle">
-    All vehicles are located on-site at BH Solutions — call for pricing and availability.
-  </p>
-
-  <table class="inventory-table">
-    <thead>
-      <tr>
-        <th>Year</th>
-        <th>Make</th>
-        <th>Model</th>
-        <th>Body</th>
-        <th>Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>2007</td><td>Ford</td><td>Explorer</td><td>SUV</td><td></td></tr>
-      <tr><td>2005</td><td>Subaru</td><td>Legacy</td><td>Sedan/Wagon</td><td></td></tr>
-      <tr><td>2007</td><td>Nissan</td><td>Murano</td><td>SUV</td><td></td></tr>
-      <tr><td>2002</td><td>Hyundai</td><td>Santa Fe</td><td>SUV</td><td></td></tr>
-      <tr><td>2007</td><td>Hyundai</td><td>Santa Fe</td><td>SUV</td><td></td></tr>
-      <tr><td>2009</td><td>Toyota</td><td>Camry</td><td>Sedan</td><td></td></tr>
-      <tr><td>2007</td><td>Infiniti</td><td>G35</td><td>Sedan/Coupe</td><td></td></tr>
-      <tr><td>2003</td><td>BMW</td><td>745Li</td><td>Luxury Sedan</td><td></td></tr>
-      <tr><td>2007</td><td>Mercury</td><td>Mountaineer</td><td>SUV</td><td></td></tr>
-      <tr><td>2003</td><td>Mazda</td><td>626</td><td>Sedan</td><td></td></tr>
-      <tr><td>2007</td><td>Volvo</td><td>S80</td><td>Luxury Sedan</td><td></td></tr>
-      <tr><td>2005</td><td>Mazda</td><td>3</td><td>Sedan/Hatchback</td><td></td></tr>
-      <tr><td>2009</td><td>Lincoln</td><td>MKZ</td><td>Luxury Sedan</td><td></td></tr>
-      <tr><td>1998</td><td>Dodge</td><td>Dakota</td><td>Pickup</td><td></td></tr>
-      <tr><td>2007</td><td>Ford</td><td>Escape</td><td>SUV</td><td></td></tr>
-      <tr><td>2003</td><td>Honda</td><td>Accord</td><td>Sedan/Coupe</td><td></td></tr>
-      <tr><td>2003</td><td>Mercedes-Benz</td><td>CLK 320</td><td>Coupe/Convertible</td><td></td></tr>
-    </tbody>
-  </table>
-</section>
-
-
+      <!-- INVENTORY GRID -->
+      <section id="inventory-grid" class="section">
+        <div class="section-header">
+          <h2>Sample inventory mix</h2>
+          <p>
+            This is a representative mix of the trucks and units we manage.
+            Actual VIN-level inventory is available on request.
+          </p>
         </div>
 
-        <p class="inventory-note">
-          Inventory changes daily. Call (530) 420-1863 for the latest arrivals or to ask
-          about a specific vehicle.
-        </p>
-      </div>
-    </section>
-  </main>
+        <div class="inventory-grid">
+          <article class="inventory-card">
+            <img
+              src="/images/inventory-silverado-white.jpg"
+              alt="White Chevy Silverado on lot"
+            />
+            <div class="inventory-card-body">
+              <div class="inventory-title">
+                2024 Chevy Silverado 2500HD WT
+              </div>
+              <div class="inventory-meta">
+                <span>Duramax</span>
+                <span>4x4</span>
+                <span>Long Bed</span>
+              </div>
+              <div class="inventory-price">Dealer unit • Yard storage</div>
+            </div>
+            <div class="inventory-card-footer">
+              <a href="#inventory-contact" class="btn btn-ghost">
+                Ask about similar Silverados
+              </a>
+            </div>
+          </article>
 
- <footer class="site-footer">
-  <div class="shell">
-    <p>BH Solutions · 4881 Feather River Blvd, Ste 1A, Oroville, CA 95965</p>
-    <p>
-      Phone: (530) 420-1863 ·
-      Email: <a href="mailto:bhsolutions321@gmail.com">bhsolutions321@gmail.com</a>
-    </p>
-    <p>
-      California Dealer License #45657 ·
-      Real Estate Services: Ron Brown – CA DRE #02010327
-    </p>
-  </div>
-</footer>
+          <article class="inventory-card">
+            <img
+              src="/images/inventory-ram-black.jpg"
+              alt="Black Ram 2500 truck"
+            />
+            <div class="inventory-card-body">
+              <div class="inventory-title">
+                2023 Ram 2500 Crew Cab • Black
+              </div>
+              <div class="inventory-meta">
+                <span>Diesel</span>
+                <span>Tow package</span>
+              </div>
+              <div class="inventory-price">
+                Lease options • Contact BH Solutions
+              </div>
+            </div>
+            <div class="inventory-card-footer">
+              <a href="#inventory-contact" class="btn btn-ghost">
+                Request Ram-style builds
+              </a>
+            </div>
+          </article>
 
+          <article class="inventory-card">
+            <img
+              src="/images/inventory-box-truck.jpg"
+              alt="Box truck at yard"
+            />
+            <div class="inventory-card-body">
+              <div class="inventory-title">
+                2019 26' Box Truck – Fleet unit
+              </div>
+              <div class="inventory-meta">
+                <span>Fleet</span>
+                <span>Delivery route</span>
+              </div>
+              <div class="inventory-price">Example only • Inquiries welcome</div>
+            </div>
+            <div class="inventory-card-footer">
+              <a href="#inventory-contact" class="btn btn-ghost">
+                Ask about box trucks
+              </a>
+            </div>
+          </article>
 
+          <article class="inventory-card">
+            <img
+              src="/images/inventory-ev-semi.jpg"
+              alt="Electric semi-truck charging"
+            />
+            <div class="inventory-card-body">
+              <div class="inventory-title">
+                EV Semi – Charging pad visualization
+              </div>
+              <div class="inventory-meta">
+                <span>Future-ready</span>
+                <span>4–6 charging bays</span>
+              </div>
+              <div class="inventory-price">
+                EV partner opportunity • Concept stage
+              </div>
+            </div>
+            <div class="inventory-card-footer">
+              <a href="/real-estate.html" class="btn btn-ghost">
+                View yard &amp; pad layout
+              </a>
+            </div>
+          </article>
 
+          <article class="inventory-card">
+            <img
+              src="/images/inventory-day-cab.jpg"
+              alt="Day cab semi-truck"
+            />
+            <div class="inventory-card-body">
+              <div class="inventory-title">
+                Day cab tractors – back-in stalls
+              </div>
+              <div class="inventory-meta">
+                <span>53' trailers</span>
+                <span>Warehouse side</span>
+              </div>
+              <div class="inventory-price">
+                Back-in parking on warehouse wall
+              </div>
+            </div>
+            <div class="inventory-card-footer">
+              <a href="#inventory-contact" class="btn btn-ghost">
+                Talk tractor/trailer parking
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
 
+      <!-- INVENTORY CONTACT FORM -->
+      <section id="inventory-contact" class="section">
+        <div class="form-panel">
+          <h3>Tell us what you’re trying to source</h3>
+          <p>
+            Share the mix of trucks, trims, or applications you’re focused on.
+            We’ll respond with what’s realistic through the BH Solutions yard.
+          </p>
 
+          <form
+            action="https://formsubmit.co/YOUR_EMAIL_HERE"
+            method="POST"
+          >
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="inv-name">Contact name</label>
+                <input
+                  type="text"
+                  id="inv-name"
+                  name="name"
+                  required
+                  placeholder="First and last name"
+                />
+              </div>
+              <div class="form-field">
+                <label for="inv-store">Store / fleet name</label>
+                <input
+                  type="text"
+                  id="inv-store"
+                  name="store"
+                  placeholder="Chevy store, independent dealer, or fleet"
+                />
+              </div>
+              <div class="form-field">
+                <label for="inv-email">Email</label>
+                <input
+                  type="email"
+                  id="inv-email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div class="form-field">
+                <label for="inv-phone">Phone</label>
+                <input
+                  type="tel"
+                  id="inv-phone"
+                  name="phone"
+                  placeholder="Best number to reach you"
+                />
+              </div>
+              <div class="form-field form-field-full">
+                <label for="inv-details">What are you looking for?</label>
+                <textarea
+                  id="inv-details"
+                  name="details"
+                  placeholder="Example: 2500/3500 Silverado mix, 3 box trucks, 1 EV semi space, etc."
+                ></textarea>
+              </div>
+            </div>
 
+            <div style="margin-top: 1.1rem;">
+              <button type="submit" class="btn btn-primary">
+                Submit inventory request
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
 
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <div class="footer-left">
+          <div class="footer-location-badge">
+            <span class="footer-location-dot"></span>
+            <span>Oroville, CA • BH Solutions Yard</span>
+          </div>
+          <div class="footer-separator"></div>
+          <span>4801 Feather River Blvd, Suite 1A</span>
+        </div>
+        <div class="footer-right">
+          <span>&copy; <span id="year"></span> BH Solutions. All rights reserved.</span>
+          <span class="footer-credit">Website powered by Dynasty Works Studio</span>
+        </div>
+      </footer>
+    </div>
 
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
