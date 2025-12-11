@@ -1,126 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>BH Solutions – Alliance Property Network Real Estate Referrals</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-
-<body>
-
-<header class="site-header">
-    <div class="shell">
-        <nav class="main-nav">
-            <a href="index.html" class="logo">
-                <img src="assets/bh_header.png" alt="BH Solutions">
-            </a>
-
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span><span></span>
-            </button>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Services</a></li>
-                <li><a href="inventory.html">Inventory</a></li>
-                <li><a href="pre-approval.html">Pre-Approval</a></li>
-                <li><a href="real-estate.html" class="active">Real Estate</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-
-<main>
-
-    <!-- HERO SECTION -->
-    <section class="section">
-        <div class="shell split">
-            <div>
-                <h2 class="section-title">Alliance Property Network Real Estate Referrals</h2>
-
-                <p>BH Solutions is more than automotive and transportation — we are also a real estate liaison through 
-                <strong>Alliance Property Network (APN)</strong>.</p>
-
-                <p>As an APN partner, BH Solutions connects clients with trusted, licensed real estate professionals in all 50 states for:</p>
-
-                <ul>
-                    <li>Buying or selling a home</li>
-                    <li>Investment and rental properties</li>
-                    <li>Relocation and out-of-state moves</li>
-                    <li>First-time homebuyers who need guidance</li>
-                </ul>
-
-                <p>You work with BH Solutions locally, and we introduce you to a vetted APN partner agent in the market where you need help. 
-                No extra cost to you — the referral process is handled behind the scenes.</p>
-            </div>
-
-            <!-- HOW IT WORKS CARD -->
-            <div class="card">
-                <img src="assets-apn-logo.png" alt="Alliance Property Network" class="apn-logo">
-
-                <h3>How it works:</h3>
-
-                <ol>
-                    <li>Tell us where you’re buying, selling, or relocating.</li>
-                    <li>We match you with a licensed APN partner agent in that area.</li>
-                    <li>The APN agent contacts you, provides guidance, and stays available throughout your move.</li>
-                </ol>
-
-                <a href="#referral-form" class="button">Request a Real Estate Referral</a>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <title>BH Solutions • Yard & Real Estate</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="description"
+      content="Overview of the BH Solutions truck & EV yard in Oroville, CA – current layout, flow, and potential real estate plays."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <!-- HEADER -->
+      <header class="site-header">
+        <div class="brand-lockup">
+          <div class="brand-logo">BH</div>
+          <div class="brand-text">
+            <span>BH Solutions</span>
+            <span>Truck • EV • Real Estate</span>
+          </div>
         </div>
-    </section>
+        <nav class="site-nav">
+          <a href="/">Home</a>
+          <a href="/inventory.html">Inventory</a>
+          <a href="/real-estate.html" class="is-active">Real Estate</a>
+        </nav>
+      </header>
 
-  <!-- REFERRAL FORM -->
-<section class="section dark" id="referral-form">
-    <div class="shell">
-
-        <h2 class="section-title">Request a Real Estate Referral</h2>
-
-        <p>
-            Use this form to tell BH Solutions what you need help with. Our team will contact you,
-            confirm details, and connect you with an APN partner agent in the right city and state.
-        </p>
-
-        <form action="https://formsubmit.co/bhsolutions321@gmail.com" method="POST" class="contact-form">
-
-            <!-- FormSubmit Settings -->
-            <input type="hidden" name="_subject" value="New Real Estate Referral Request">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-
-            <div class="form-grid">
-                <input type="text" name="Full Name" placeholder="Full Name*" required>
-                <input type="tel" name="Phone" placeholder="Phone*" required>
-                <input type="email" name="Email" placeholder="Email*" required>
-                <input type="text" name="City & State" placeholder="City & State*" required>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-shell hero-shell-compact">
+          <div class="hero-inner">
+            <div class="hero-badge-row">
+              <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                <span>Active Oroville, CA yard</span>
+              </div>
+              <div class="hero-badge-flag">Truck • EV • Warehouse</div>
             </div>
 
-            <textarea 
-                name="What Are You Looking To Do?"
-                placeholder="Buy, sell, invest, relocate, first-time buyer, etc."
-                required
-            ></textarea>
+            <h1>
+              A working truck yard with a
+              <span>real estate upside</span>.
+            </h1>
 
-            <button type="submit" class="btn btn-primary">Submit Real Estate Request</button>
+            <p>
+              4801 Feather River Blvd is more than parking. It’s a live yard
+              with a warehouse spine, diesel capacity, and a south-pad concept
+              for EV big-rig charging.
+            </p>
 
-        </form>
+            <div class="hero-actions">
+              <a href="#yard-overview" class="btn btn-primary">
+                View yard overview
+              </a>
+              <a href="#re-contact" class="btn btn-outline">
+                Discuss real estate plays
+              </a>
+            </div>
+          </div>
 
-        <p class="form-disclaimer">
-            This form sends your information to BH Solutions so our team can contact you and coordinate 
-            an APN referral. It does not create an agency relationship or affect your credit.
-        </p>
+          <div class="hero-media">
+            <img
+              src="/images/yard-hero-aerial.jpg"
+              alt="Aerial render of BH Solutions yard layout"
+            />
+            <div class="hero-media-overlay">
+              <div>
+                <strong>North-to-south truck flow</strong><br />
+                <span>Entrance, staging, back-in stalls, EV pad on south end.</span>
+              </div>
+              <span>Conceptual layout • Operator guided</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- YARD OVERVIEW -->
+      <section id="yard-overview" class="section">
+        <div class="section-header">
+          <h2>How the yard is laid out</h2>
+          <p>
+            Designed around one-way movement, clear staging, and future-ready EV
+            zones, using the warehouse wall as the backbone.
+          </p>
+        </div>
+
+        <div class="deal-panel">
+          <div>
+            <h3>North entrance &amp; staging</h3>
+            <div class="deal-meta">
+              <span>Entrance gate off Feather River Blvd</span>
+              <span>Office trailer</span>
+              <span>2–3 truck staging lane</span>
+            </div>
+            <p class="deal-keyline">
+              Trucks enter at the north end, check in by the small office
+              trailer, and stage in a short lane before backing toward the
+              warehouse stalls.
+            </p>
+
+            <h3>Middle yard – back-in stall wall</h3>
+            <div class="deal-meta">
+              <span>Single row of back-in stalls</span>
+              <span>53' trailers</span>
+              <span>Dedicated drive lane</span>
+            </div>
+            <p class="deal-keyline">
+              The warehouse wall carries a row of back-in stalls for diesel
+              trucks and trailers, with a clear one-way lane between the stalls
+              and the Feather River fence line.
+            </p>
+          </div>
+
+          <div>
+            <h3>South pad – EV &amp; expansion</h3>
+            <div class="deal-meta">
+              <span>Concept: 4–6 EV bays</span>
+              <span>Charging infrastructure</span>
+              <span>Fleet / partner-ready</span>
+            </div>
+            <p class="deal-keyline">
+              The southern pad is mapped as an EV big-rig zone — long bays with
+              space for chargers, power runs, and cab maneuvering, aligned to
+              future partners.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- REAL ESTATE ANGLE -->
+      <section class="section">
+        <div class="section-header">
+          <h2>Real estate &amp; partnership conversations</h2>
+          <p>
+            This yard can act as a base for a single dealer, a small group, or a
+            fleet partner. The conversation covers both operations and equity.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="feature-card">
+            <h3>Dealer-anchored yard</h3>
+            <p>
+              Use the yard as a satellite for a Chevy or multi-brand dealer —
+              overflow, prep, or a dedicated work-truck center.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Fleet &amp; logistics uses</h3>
+            <p>
+              If you’re running day cabs, box trucks, or local routes, the yard
+              can be a structured base with clear in/out flow.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>EV infrastructure build-out</h3>
+            <p>
+              Partner on building the south-pad EV zone: chargers, pads, and
+              data. Real estate plus infrastructure value over time.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- REAL ESTATE CONTACT FORM -->
+      <section id="re-contact" class="section">
+        <div class="form-panel">
+          <h3>Start a real estate / partnership conversation</h3>
+          <p>
+            If you’re thinking about using the yard, co-investing, or building
+            EV infrastructure on-site, share a few details and we’ll respond
+            directly.
+          </p>
+
+          <form
+            action="https://formsubmit.co/YOUR_EMAIL_HERE"
+            method="POST"
+          >
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="re-name">Contact name</label>
+                <input
+                  type="text"
+                  id="re-name"
+                  name="name"
+                  required
+                  placeholder="First and last name"
+                />
+              </div>
+              <div class="form-field">
+                <label for="re-entity">Entity / store</label>
+                <input
+                  type="text"
+                  id="re-entity"
+                  name="entity"
+                  placeholder="Dealer group, fleet, investor, etc."
+                />
+              </div>
+              <div class="form-field">
+                <label for="re-email">Email</label>
+                <input
+                  type="email"
+                  id="re-email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div class="form-field">
+                <label for="re-phone">Phone</label>
+                <input
+                  type="tel"
+                  id="re-phone"
+                  name="phone"
+                  placeholder="Best number to reach you"
+                />
+              </div>
+              <div class="form-field form-field-full">
+                <label for="re-focus">What’s the main focus?</label>
+                <textarea
+                  id="re-focus"
+                  name="focus"
+                  placeholder="Satellite yard, EV build-out, long-term lease, equity partnership, etc."
+                ></textarea>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.1rem;">
+              <button type="submit" class="btn btn-primary">
+                Send real estate inquiry
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <div class="footer-left">
+          <div class="footer-location-badge">
+            <span class="footer-location-dot"></span>
+            <span>Oroville, CA • BH Solutions Yard</span>
+          </div>
+          <div class="footer-separator"></div>
+          <span>4801 Feather River Blvd, Suite 1A</span>
+        </div>
+        <div class="footer-right">
+          <span>&copy; <span id="year"></span> BH Solutions. All rights reserved.</span>
+          <span class="footer-credit">Website powered by Dynasty Works Studio</span>
+        </div>
+      </footer>
     </div>
-</section>
 
-
-</main>
-
-</body>
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
 </html>
