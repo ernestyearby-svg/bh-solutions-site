@@ -597,4 +597,33 @@ p {
     max-height: 48px;
   }
 }
+/* ==== Featured partner badge logo sizing ==== */
+
+/* Shared size for the BH / U-Haul / Interlock / APN tiles */
+img[alt="BH Solutions logo"],
+img[alt="U-Haul logo"],
+img[alt="Ignition Interlock Services logo"],
+img[alt="Alliance Property Network logo"] {
+  max-height: 88px;       /* was smaller before */
+  width: auto;
+}
+
+/* If you used a pill/card wrapper around them, give the card a bit more room */
+.partners-row,
+.partners-grid {
+  gap: 2.5rem;
+}
+
+.partner-card,
+.partner-pill {
+  padding: 1.75rem 2rem;
+}
+
+/* Make sure logos inside the white partner pills are centered cleanly */
+.partner-card img,
+.partner-pill img {
+  display: block;
+  margin: 0 auto;
+}
+
 
