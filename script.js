@@ -1,20 +1,12 @@
-// Mobile Navigation Toggle
-const navToggle = document.getElementById("navToggle");
-const navLinks = document.getElementById("navLinks");
+// Minimal JS: highlight active nav link based on data-page on <body>
 
-if (navToggle) {
-    navToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("open");
-    });
-}
-
-// Form Auto-Scroll (optional)
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector("form");
+  const currentPage = document.body.dataset.page;
+  if (!currentPage) return;
 
-    if (form) {
-        form.addEventListener("submit", () => {
-            console.log("Real Estate form submitted.");
-        });
+  document.querySelectorAll(".nav-link[data-nav]").forEach((link) => {
+    if (link.dataset.nav === currentPage) {
+      link.classList.add("is-active");
     }
+  });
 });
