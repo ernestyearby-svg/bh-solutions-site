@@ -729,6 +729,17 @@ img[alt="Alliance Property Network logo"] {
     height: 140px;
   }
 }
+/* HEADER LOGO FIX */
+.nav-logo {
+  height: 70px !important;        /* Bigger logo */
+}
+
+@media (max-width: 768px) {
+  .nav-logo {
+    height: 55px !important;      /* Mobile size */
+  }
+}
+
 
 
 
