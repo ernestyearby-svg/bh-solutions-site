@@ -9,6 +9,7 @@
 <body>
   <div class="site-shell">
     <div class="page-card">
+
       <!-- HEADER / NAV -->
       <header class="site-header">
         <div class="nav-bar">
@@ -16,17 +17,18 @@
             <img src="bh-header-gold.png" alt="BH Solutions logo" />
           </a>
           <nav class="nav-links">
-            <a href="index.html" class="nav-link-active">Services</a>
-            <a href="inventory.html">Inventory</a>
-            <a href="index.html#preapproval">Pre-Approval</a>
-            <a href="real-estate.html">Real Estate</a>
-            <a href="index.html#contact">Contact</a>
+            <a href="index.html" class="nav-link nav-link-active">Services</a>
+            <a href="inventory.html" class="nav-link">Inventory</a>
+            <a href="#preapproval" class="nav-link">Pre-Approval</a>
+            <a href="real-estate.html" class="nav-link">Real Estate</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </nav>
         </div>
       </header>
 
       <main class="site-main">
-                        <!-- HERO – HOME -->
+
+        <!-- HERO – HOME -->
         <section class="hero">
           <div class="hero-shell">
             <div class="hero-content">
@@ -37,17 +39,15 @@
               </h1>
               <p class="hero-body">
                 From used vehicles to logistics support, local hauling, registration help,
-                U-Haul rentals, ignition interlocks, and trusted real estate partners —
-                BH Solutions keeps everything under one roof with small-town honesty
-                and big-city capability.
+                U-Haul rentals, ignition interlocks, and trusted real estate partners — BH Solutions
+                keeps everything under one roof with small-town honesty and big-city capability.
               </p>
               <div class="hero-actions">
-                <a href="index.html#services" class="btn btn-gold">View Services</a>
-                <a href="index.html#preapproval" class="btn btn-ghost">Start Pre-Approval</a>
+                <a href="#services" class="btn btn-gold">View Services</a>
+                <a href="#preapproval" class="btn btn-ghost">Start Pre-Approval</a>
               </div>
             </div>
 
-            <!-- You can add an extra class here if you want to style the pill -->
             <figure class="hero-media">
               <img src="bh-hero-silverado.png"
                    alt="BH Solutions Chevy Silverado hero image" />
@@ -64,226 +64,148 @@
             <p class="section-subtitle">
               One stop for vehicles, transport, and housing connections.
             </p>
-
-            <ul class="badge-strip">
-              <li class="badge-chip">Used vehicle sales – clean titles</li>
-              <li class="badge-chip">Local hauling &amp; logistics</li>
-              <li class="badge-chip">Registration help &amp; paperwork</li>
-              <li class="badge-chip">U-Haul coordination</li>
-              <li class="badge-chip">Ignition interlock installs</li>
-              <li class="badge-chip">Real estate referrals through APN</li>
+            <ul class="service-list">
+              <li>Used vehicle sales – clean titles</li>
+              <li>Local hauling &amp; logistics</li>
+              <li>Registration help &amp; paperwork</li>
+              <li>U-Haul coordination</li>
+              <li>Ignition interlock installs</li>
+              <li>Real estate referrals through APN</li>
             </ul>
 
-            <!-- NEW: service logo row (U-Haul, interlock, real estate, BH) -->
-            <div class="service-logo-row">
-              <div class="service-logo-chip">
-                <img src="assets-bh-logo.png" alt="BH Solutions logo" />
-                <span>BH Solutions</span>
-              </div>
-
-              <div class="service-logo-chip">
-                <img src="logo-uhaul.png" alt="U-Haul logo" />
-                <span>U-Haul Rentals</span>
-              </div>
-
-              <div class="service-logo-chip">
-                <img src="logo-interlock.png" alt="Ignition interlock partner logo" />
-                <span>Ignition Interlock</span>
-              </div>
-
-              <div class="service-logo-chip">
-                <img src="assets-apn-logo.png" alt="Alliance Property Network logo" />
-                <span>Real Estate – APN</span>
+            <!-- SERVICE LOGOS ROW -->
+            <div class="service-logos-row">
+              <span class="service-logos-label">Featured partners:</span>
+              <div class="service-logos">
+                <img src="logo-uhaul-tile.png" alt="U-Haul logo" />
+                <img src="logo-interlock-gold.png" alt="Ignition Interlock Services logo" />
+                <img src="apn-logo-horizontal-gold.png" alt="Alliance Property Network logo" />
               </div>
             </div>
           </div>
         </section>
 
-
-        <!-- SERVICES SUMMARY -->
-        <section id="services" class="section">
+        <!-- INVENTORY PREVIEW -->
+        <section class="section section-light">
           <div class="section-shell">
             <div class="section-header">
-              <h2 class="section-title">What BH Solutions Can Help With</h2>
+              <h2 class="section-title">Quality Trucks &amp; Reliable Vehicles</h2>
             </div>
             <p class="section-subtitle">
-              One stop for vehicles, transport, and housing connections.
+              Inventory changes often. Call or visit to confirm the latest trucks, SUVs, and cars on the lot.
             </p>
-            <ul class="badge-strip">
-              <li class="badge-chip">Used vehicle sales – clean titles</li>
-              <li class="badge-chip">Local hauling &amp; logistics</li>
-              <li class="badge-chip">Registration help &amp; paperwork</li>
-              <li class="badge-chip">U-Haul coordination</li>
-              <li class="badge-chip">Ignition interlock installs</li>
-              <li class="badge-chip">Real estate referrals through APN</li>
-            </ul>
-          </div>
-        </section>
-
-
-        <!-- SERVICES SUMMARY -->
-        <section id="services" class="section">
-          <div class="section-shell">
-            <div class="section-header">
-              <h2 class="section-title">What BH Solutions Can Help With</h2>
+            <div class="cta-row">
+              <a href="inventory.html" class="btn btn-gold">View Inventory Snapshot</a>
+              <a href="tel:15304201863" class="btn btn-ghost">Call (530) 420-1863</a>
             </div>
-            <p class="section-subtitle">
-              One stop for vehicles, transport, and housing connections.
-            </p>
-            <ul class="badge-strip">
-              <li class="badge-chip">Used vehicle sales – clean titles</li>
-              <li class="badge-chip">Local hauling &amp; logistics</li>
-              <li class="badge-chip">Registration help &amp; paperwork</li>
-              <li class="badge-chip">U-Haul coordination</li>
-              <li class="badge-chip">Ignition interlock installs</li>
-              <li class="badge-chip">Real estate referrals through APN</li>
-            </ul>
-          </div>
-        </section>
-
-
-        <!-- SERVICES SUMMARY -->
-        <section id="services" class="section">
-          <div class="section-shell">
-            <div class="section-header">
-              <h2 class="section-title">What BH Solutions Can Help With</h2>
-            </div>
-            <p class="section-subtitle">
-              One stop for vehicles, transport, and housing connections.
-            </p>
-            <ul class="badge-strip">
-              <li class="badge-chip">Used vehicle sales – clean titles</li>
-              <li class="badge-chip">Local hauling &amp; logistics</li>
-              <li class="badge-chip">Registration help &amp; paperwork</li>
-              <li class="badge-chip">U-Haul coordination</li>
-              <li class="badge-chip">Ignition interlock installs</li>
-              <li class="badge-chip">Real estate referrals through APN</li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- INVENTORY PROMO -->
-        <section class="section">
-          <div class="section-shell section-shell--alt">
-            <div class="section-header">
-              <h2 class="section-title">Trucks, SUVs &amp; Everyday Drivers</h2>
-              <a href="inventory.html" class="btn btn-outline">Browse Inventory</a>
-            </div>
-            <p class="section-subtitle">
-              BH Solutions keeps a rotating inventory of clean-title vehicles.
-              Inventory changes quickly — use the inventory page for a snapshot,
-              then call or visit for the latest list.
-            </p>
           </div>
         </section>
 
         <!-- PRE-APPROVAL -->
         <section id="preapproval" class="section">
-          <div class="section-shell">
-            <div class="section-header">
-              <h2 class="section-title">Start Your Pre-Approval</h2>
-            </div>
-            <p class="section-subtitle">
-              A simple pre-approval conversation makes the vehicle process smoother.
-              Share a few details and BH Solutions will follow up to talk through options.
-            </p>
-            <ul class="badge-strip">
-              <li class="badge-chip">Quick information — no obligation</li>
-              <li class="badge-chip">Helps you understand your budget</li>
-              <li class="badge-chip">Friendly, local guidance</li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- REAL ESTATE PROMO -->
-        <section class="section">
-          <div class="section-shell section-shell--alt">
-            <div class="section-header">
-              <h2 class="section-title">Real Estate Referrals You Can Trust</h2>
-              <a href="real-estate.html" class="btn btn-outline">View Real Estate Info</a>
-            </div>
-            <p class="section-subtitle">
-              Through Alliance Property Network, BH Solutions connects clients with licensed agents
-              across California and beyond for home purchases, sales, and relocations.
-            </p>
-
-            <div class="logo-pill-row">
-              <div class="logo-pill">
-                <img src="assets-bh-header-gold.png" alt="BH Solutions full logo" />
+          <div class="section-shell section-split">
+            <div class="section-split-text">
+              <div class="section-header">
+                <h2 class="section-title">Start Your Pre-Approval</h2>
               </div>
-              <div class="logo-pill">
-                <img src="assets-apn-header-gold.png"
-                     alt="Alliance Property Network full logo" />
+              <p class="section-subtitle">
+                Get a head start before you visit the lot. BH Solutions can help you understand what
+                payment range and vehicles make the most sense for your situation.
+              </p>
+              <ul class="checklist">
+                <li>Quick phone-based pre-approval</li>
+                <li>Clear explanation of down payment &amp; terms</li>
+                <li>No-pressure, local guidance</li>
+              </ul>
+              <div class="cta-row">
+                <a href="tel:15304201863" class="btn btn-gold">Call for Pre-Approval</a>
+                <a href="mailto:bhsoutions321@gmail.com" class="btn btn-ghost">Email Information</a>
               </div>
+            </div>
+            <div class="section-split-card">
+              <h3 class="mini-heading">What to Have Ready</h3>
+              <ul class="mini-list">
+                <li>Driver’s license</li>
+                <li>Proof of income</li>
+                <li>Proof of residence</li>
+                <li>Best contact phone &amp; email</li>
+              </ul>
             </div>
           </div>
         </section>
 
-        <!-- CONTACT -->
+        <!-- REAL ESTATE TEASER -->
+        <section class="section section-light">
+          <div class="section-shell section-split">
+            <div class="section-split-text">
+              <div class="section-header">
+                <h2 class="section-title">From the Driver’s Seat to Your Next Front Door</h2>
+              </div>
+              <p class="section-subtitle">
+                Through Alliance Property Network, drivers and families can be connected with licensed
+                real estate agents for home purchases, sales, and relocations — all starting from the
+                same trusted BH Solutions hub.
+              </p>
+              <div class="cta-row">
+                <a href="real-estate.html" class="btn btn-gold">Learn How It Works</a>
+                <a href="real-estate.html#referral" class="btn btn-ghost">Request a Real Estate Referral</a>
+              </div>
+            </div>
+            <div class="section-split-card section-split-logo-card">
+              <img src="assets-apn-header-gold.png"
+                   alt="Alliance Property Network header logo" />
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT & APPOINTMENTS -->
         <section id="contact" class="section">
-          <div class="section-shell">
-            <div class="contact-grid">
-              <div class="contact-card">
-                <h2 class="contact-heading">Contact &amp; Appointments</h2>
-                <p class="contact-body">
-                  Use this section for vehicle questions, U-Haul dates, ignition interlock
-                  scheduling, registration help, hauling/logistics, or real estate referrals.
-                </p>
-                <div class="contact-details">
-                  <p><strong>BH Solutions</strong></p>
-                  <p>4881 Feather River Blvd, Ste 1A<br />Oroville, CA 95965</p>
-                  <p><strong>Phone:</strong> (530) 420-1863</p>
-                  <p><strong>Email:</strong> bhsoutions321@gmail.com</p>
-                </div>
-
-                <div class="logo-pill-row">
-                  <div class="logo-pill">
-                    <img src="assets-bh-header-gold.png" alt="BH Solutions logo" />
-                  </div>
-                  <div class="logo-pill">
-                    <img src="assets-apn-header-gold.png"
-                         alt="Alliance Property Network logo" />
-                  </div>
-                </div>
+          <div class="section-shell section-split">
+            <div class="section-split-text">
+              <div class="section-header">
+                <h2 class="section-title">Contact &amp; Appointments</h2>
               </div>
+              <p class="section-subtitle">
+                Call, text, or stop by for vehicle questions, U-Haul dates, ignition interlock
+                scheduling, hauling/logistics, or real estate referrals.
+              </p>
 
-              <div class="contact-card">
-                <h3 class="contact-heading">Licensing &amp; Real Estate</h3>
-                <p class="contact-body">
-                  All real estate activity is handled by licensed agents through
-                  Alliance Property Network.
-                </p>
-                <p class="contact-body">
-                  BH Solutions acts as a trusted local connector for drivers,
-                  families, and clients.
-                </p>
-                <div class="badge-strip">
-                  <span class="badge-chip">
-                    CA Dealer License #45657
-                  </span>
-                  <span class="badge-chip">
-                    Real Estate Services: Ron Brown — CA DRE #02010327
-                  </span>
-                </div>
+              <div class="contact-block">
+                <h3 class="mini-heading">BH Solutions</h3>
+                <p>4881 Feather River Blvd, Ste 1A<br />Oroville, CA 95965</p>
+                <p><strong>Phone:</strong> <a href="tel:15304201863">(530) 420-1863</a></p>
+                <p><strong>Email:</strong> <a href="mailto:bhsoutions321@gmail.com">bhsoutions321@gmail.com</a></p>
               </div>
             </div>
 
-            <p class="footer-licensing">
-              BH Solutions · 4881 Feather River Blvd, Ste 1A, Oroville, CA 95965 ·
-              California Dealer License #45657 · Real Estate Services: Ron Brown — CA DRE #02010327
-            </p>
+            <div class="section-split-card">
+              <h3 class="mini-heading">Licensing &amp; Real Estate</h3>
+              <p>
+                All real estate activity is handled by licensed agents through Alliance Property Network.
+                BH Solutions acts as a trusted local connector for drivers, families, and clients.
+              </p>
+              <p class="small-copy">
+                CA Dealer License #45657<br />
+                Real Estate Services: Ron Brown — CA DRE #02010327
+              </p>
+            </div>
+          </div>
+
+          <!-- PARTNER STRIP -->
+          <div class="section-shell partner-strip">
+            <img src="bh-logo-horizontal-gold.png" alt="BH Solutions horizontal logo" />
+            <img src="apn-logo-horizontal-gold.png" alt="Alliance Property Network horizontal logo" />
+            <img src="logo-interlock-gold.png" alt="Ignition Interlock Services logo" />
+            <img src="logo-uhaul-tile.png" alt="U-Haul Authorized Dealer logo" />
           </div>
         </section>
+
       </main>
 
       <footer class="site-footer">
-        <span>© BH Solutions. All rights reserved.</span>
-        <span class="footer-credit">Website powered by Dynasty Works Studio.</span>
+        <p>BH Solutions · 4881 Feather River Blvd, Ste 1A, Oroville, CA 95965 · California Dealer License #45657 · Real Estate Services: Ron Brown — CA DRE #02010327</p>
       </footer>
     </div>
   </div>
 </body>
 </html>
-
-
-
