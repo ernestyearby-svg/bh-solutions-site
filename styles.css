@@ -574,3 +574,27 @@ p {
     padding-inline: 1rem;
   }
 }
+/* ==== BH Solutions header logo sizing overrides ==== */
+
+.nav-brand img[alt="BH Solutions logo"],
+.nav-brand img.nav-logo {
+  display: block;
+  max-height: 68px;   /* bigger in the top bar */
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .nav-brand img[alt="BH Solutions logo"],
+  .nav-brand img.nav-logo {
+    max-height: 58px;
+  }
+}
+
+/* Phones */
+@media (max-width: 640px) {
+  .nav-brand img[alt="BH Solutions logo"],
+  .nav-brand img.nav-logo {
+    max-height: 48px;
+  }
+}
+
