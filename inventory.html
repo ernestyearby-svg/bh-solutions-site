@@ -7,245 +7,152 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="site-shell">
-    <div class="page-card">
-      <!-- HEADER / NAV -->
-      <header class="site-header">
-        <div class="nav-bar">
-          <a href="index.html" class="nav-brand">
-            <img src="assets-bh-header-gold.png" alt="BH Solutions logo" />
-          </a>
-          <nav class="nav-links">
-            <a href="index.html" class="nav-link">Services</a>
-            <a href="inventory.html" class="nav-link nav-link-active">Inventory</a>
-            <a href="index.html#preapproval" class="nav-link">Pre-Approval</a>
-            <a href="real-estate.html" class="nav-link">Real Estate</a>
-            <a href="index.html#contact" class="nav-link">Contact</a>
-          </nav>
+<div class="site-shell">
+  <div class="page-card">
+
+    <!-- HEADER / NAV -->
+    <header class="site-header">
+      <div class="nav-bar">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/bh-header-gold.png" alt="BH Solutions logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Services</a>
+          <a href="inventory.html" class="nav-link nav-link-active">Inventory</a>
+          <a href="pre-approval.html" class="nav-link">Pre-Approval</a>
+          <a href="real-estate.html" class="nav-link">Real Estate</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-shell">
+          <div class="hero-content">
+            <div class="hero-eyebrow">Used Vehicle Inventory</div>
+            <h1 class="hero-title">
+              Quality Trucks &amp; Reliable<br />Vehicles
+            </h1>
+            <p class="hero-body">
+              Dependable pre-owned vehicles — clean titles and ready for Oroville’s roads.
+              Inventory changes weekly, so call or text to confirm the most current list.
+            </p>
+            <div class="hero-actions">
+              <a href="#snapshot" class="btn btn-gold">View Current Snapshot</a>
+              <a href="tel:+15304201863" class="btn btn-ghost">Call for Today’s List</a>
+            </div>
+          </div>
+
+          <figure class="hero-media">
+            <img src="assets/bh-hero-chevy.png"
+                 alt="BH Solutions black truck hero image" />
+          </figure>
         </div>
-      </header>
+      </section>
 
-      <main class="site-main">
-        <!-- HERO – INVENTORY -->
-        <section class="hero hero-compact">
-          <div class="hero-shell hero-shell-compact">
-            <div class="hero-content">
-              <div class="hero-eyebrow">Used Vehicle Inventory</div>
-              <h1 class="hero-title">Quality Trucks &amp; Reliable Vehicles</h1>
-              <p class="hero-body">
-                Dependable pre-owned vehicles — clean titles and ready for Oroville’s roads.
-                Inventory changes weekly, so call or text to confirm the most current list.
-              </p>
-              <div class="hero-actions">
-                <a href="#inventory" class="btn btn-gold">View Current Snapshot</a>
-                <a href="tel:15304201863" class="btn btn-ghost">Call for Today’s List</a>
-              </div>
-            </div>
-
-            <figure class="hero-media">
-              <img src="bh-hero-chevy.png"
-                   alt="BH Solutions black truck hero image" />
-            </figure>
-          </div>
-        </section>
-
-        <!-- CURRENT INVENTORY TABLE -->
-        <section id="inventory" class="section">
-          <div class="section-shell">
-            <div class="section-header">
-              <h2 class="section-title">Current Inventory Snapshot</h2>
-            </div>
+      <!-- INVENTORY SNAPSHOT -->
+      <section id="snapshot" class="section">
+        <div class="section-shell">
+          <div class="section-header">
+            <h2 class="section-title">Today’s Snapshot</h2>
             <p class="section-subtitle">
-              Vehicles below are on site at BH Solutions. Call to confirm availability, new arrivals, and pricing.
-            </p>
-
-            <div class="table-shell">
-              <table class="inventory-table">
-                <thead>
-                  <tr>
-                    <th>Year</th>
-                    <th>Make</th>
-                    <th>Model</th>
-                    <th>Body</th>
-                    <th>Notes</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>2007</td>
-                    <td>Ford</td>
-                    <td>Explorer</td>
-                    <td>SUV</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2007</td>
-                    <td>Nissan</td>
-                    <td>Murano</td>
-                    <td>SUV</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2007</td>
-                    <td>Hyundai</td>
-                    <td>Santa Fe</td>
-                    <td>SUV</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2007</td>
-                    <td>Infiniti</td>
-                    <td>G35</td>
-                    <td>Sedan/Coupe</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2007</td>
-                    <td>Mercury</td>
-                    <td>Mountaineer</td>
-                    <td>SUV</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2007</td>
-                    <td>Volvo</td>
-                    <td>S80</td>
-                    <td>Luxury Sedan</td>
-                    <td></td>
-                  </tr>
-                  <!-- Extra rows placeholder so the table can be expanded later -->
-                  <tr>
-                    <td>2008</td>
-                    <td>Chevrolet</td>
-                    <td>Silverado 1500</td>
-                    <td>Pickup</td>
-                    <td>Local trade-in</td>
-                  </tr>
-                  <tr>
-                    <td>2009</td>
-                    <td>Dodge</td>
-                    <td>Ram 1500</td>
-                    <td>Pickup</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2010</td>
-                    <td>Ford</td>
-                    <td>F-150</td>
-                    <td>Pickup</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2011</td>
-                    <td>Chevrolet</td>
-                    <td>Suburban</td>
-                    <td>SUV</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2012</td>
-                    <td>Chevrolet</td>
-                    <td>Tahoe</td>
-                    <td>SUV</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2013</td>
-                    <td>GMC</td>
-                    <td>Sierra 1500</td>
-                    <td>Pickup</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2014</td>
-                    <td>Ford</td>
-                    <td>Escape</td>
-                    <td>SUV</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2015</td>
-                    <td>Chevrolet</td>
-                    <td>Equinox</td>
-                    <td>SUV</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2016</td>
-                    <td>Jeep</td>
-                    <td>Grand Cherokee</td>
-                    <td>SUV</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p class="section-footnote">
-              Inventory is updated regularly, but not in real time. For the most accurate list,
-              please call or text BH Solutions.
+              Sample of the types of vehicles BH Solutions carries. Call or text for exact units on the lot.
             </p>
           </div>
-        </section>
 
-        <!-- READY TO SEE A VEHICLE -->
-        <section class="section section-contact">
-          <div class="section-shell section-shell-split">
-            <div class="section-block">
-              <h2 class="section-title">Ready to See a Vehicle?</h2>
-              <p class="section-body">
-                The fastest way to confirm inventory is to call, text, or stop by. BH Solutions can also
-                help you start pre-approval so you know what works before you visit.
+          <div class="card-grid">
+            <article class="vehicle-card">
+              <h3 class="vehicle-title">Half-Ton &amp; 3/4-Ton Pickups</h3>
+              <p class="vehicle-meta">Gas &amp; diesel · 4x2 &amp; 4x4</p>
+              <p class="vehicle-body">
+                Work-ready trucks for local drivers, contractors, and small fleets — always clean titles.
               </p>
+            </article>
 
-              <h3 class="contact-name">BH Solutions</h3>
-              <p class="contact-text">
+            <article class="vehicle-card">
+              <h3 class="vehicle-title">SUVs &amp; Family Vehicles</h3>
+              <p class="vehicle-meta">3-row &amp; 2-row options</p>
+              <p class="vehicle-body">
+                Reliable SUVs and crossovers for families, carpools, and everyday driving.
+              </p>
+            </article>
+
+            <article class="vehicle-card">
+              <h3 class="vehicle-title">Cars &amp; Daily Drivers</h3>
+              <p class="vehicle-meta">Budget-friendly</p>
+              <p class="vehicle-body">
+                Simple, economical vehicles that are easy to own and easy to maintain.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT / LICENSING -->
+      <section id="contact" class="section section-contact">
+        <div class="section-shell contact-grid">
+          <div>
+            <h2 class="section-title">Ready to See a Vehicle?</h2>
+            <p class="section-subtitle">
+              The fastest way to confirm inventory is to call, text, or stop by. BH Solutions can also
+              help you start pre-approval so you know what works before you visit.
+            </p>
+
+            <div class="contact-block">
+              <h3 class="contact-heading">BH Solutions</h3>
+              <p class="contact-lines">
                 4881 Feather River Blvd, Ste 1A<br />
                 Oroville, CA 95965
               </p>
-              <p class="contact-text">
-                <span class="contact-label">Phone:</span> (530) 420-1863<br />
-                <span class="contact-label">Email:</span> bhsoutions321@gmail.com
+              <p class="contact-lines">
+                <strong>Phone:</strong> (530) 420-1863<br />
+                <strong>Email:</strong> bhsoutions321@gmail.com
               </p>
-
-              <div class="contact-logos">
-                <img src="bh-logo-horizontal-gold.png" alt="BH Solutions logo" />
-                <img src="logo-uhaul-tile.png" alt="U-Haul logo" />
-                <img src="logo-interlock-gold.png" alt="Ignition Interlock Services logo" />
-              </div>
             </div>
 
-            <div class="section-block card-soft">
-              <h2 class="section-title">Licensing &amp; Real Estate</h2>
-              <p class="section-body">
-                For home purchases, sales, or relocations, BH Solutions partners with
-                Alliance Property Network to connect you to licensed agents.
-              </p>
-              <p class="contact-text">
-                CA Dealer License #45657<br />
-                Real Estate Services: Ron Brown — CA DRE #02010327
-              </p>
-              <img class="partner-inline-logo"
-                   src="apn-logo-horizontal-gold.png"
+            <div class="contact-logos">
+              <img src="assets/bh-logo-horizontal-gold.png" alt="BH Solutions logo" />
+              <img src="assets/logo-uhaul-tile.png" alt="U-Haul logo" />
+              <img src="assets/logo-interlock-gold.png" alt="Ignition Interlock Services logo" />
+            </div>
+          </div>
+
+          <div>
+            <h3 class="contact-heading">Licensing &amp; Real Estate</h3>
+            <p class="contact-lines">
+              For home purchases, sales, or relocations, BH Solutions partners with
+              Alliance Property Network to connect you to licensed agents.
+            </p>
+            <p class="contact-lines">
+              CA Dealer License #45657<br />
+              Real Estate Services: Ron Brown — CA DRE #02010327
+            </p>
+            <div class="contact-logos">
+              <img src="assets/apn-logo-horizontal-gold.png"
                    alt="Alliance Property Network logo" />
             </div>
           </div>
-        </section>
-      </main>
-
-      <!-- FOOTER -->
-      <footer class="site-footer">
-        <div class="footer-shell">
-          <p class="footer-meta">
-            BH Solutions · 4881 Feather River Blvd, Ste 1A, Oroville, CA 95965 ·
-            California Dealer License #45657 · Real Estate Services: Ron Brown — CA DRE #02010327
-          </p>
-          <p class="footer-credit">
-            Powered by <span>Dynasty Works Studio</span>
-          </p>
         </div>
-      </footer>
-    </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <p class="footer-meta">
+          BH Solutions · 4881 Feather River Blvd, Ste 1A, Oroville, CA 95965 ·
+          California Dealer License #45657 · Real Estate Services: Ron Brown — CA DRE #02010327
+        </p>
+        <p class="footer-powered">
+          <span>Powered by</span>
+          <span class="footer-brand">Dynasty Works Studio</span>
+        </p>
+      </div>
+    </footer>
+
   </div>
+</div>
 </body>
 </html>
