@@ -1,159 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>BH Solutions – Pre-Approval</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-<div class="site-shell">
-  <div class="page-card">
-
-    <!-- HEADER / NAV -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>BH Solutions – Pre-Approval Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body data-page="pre-approval">
     <header class="site-header">
-      <div class="nav-bar">
+      <div class="shell header-inner">
         <a href="index.html" class="nav-brand">
-          <img src="assets/bh-header-gold.png" alt="BH Solutions logo" />
+          <img
+            src="assets/bh-logo-horizontal-gold.png"
+            alt="BH Solutions logo"
+            class="nav-logo"
+          />
         </a>
-        <nav class="nav-links">
-          <a href="index.html" class="nav-link">Services</a>
-          <a href="inventory.html" class="nav-link">Inventory</a>
-          <a href="pre-approval.html" class="nav-link nav-link-active">Pre-Approval</a>
-          <a href="real-estate.html" class="nav-link">Real Estate</a>
-          <a href="#contact" class="nav-link">Contact</a>
+        <nav class="nav-main">
+          <a href="index.html" class="nav-link" data-nav="services">Services</a>
+          <a href="inventory.html" class="nav-link" data-nav="inventory">Inventory</a>
+          <a href="pre-approval.html" class="nav-link" data-nav="pre-approval">Pre-Approval</a>
+          <a href="real-estate.html" class="nav-link" data-nav="real-estate">Real Estate</a>
+          <a href="index.html#contact" class="nav-link nav-link-contact">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main class="site-main">
+    <main>
       <!-- HERO -->
-      <section class="hero">
-        <div class="hero-shell">
-          <div class="hero-content">
-            <div class="hero-eyebrow">Financing Snapshot</div>
-            <h1 class="hero-title">Start Your Pre-Approval</h1>
-            <p class="hero-body">
-              Use this page as a starting point to share your basic information with BH Solutions.
-              We’ll walk through options together — no pressure, no hidden fees.
+      <section class="hero hero-compact">
+        <div class="shell hero-shell hero-shell-compact">
+          <div class="hero-copy">
+            <p class="eyebrow">Financing Support</p>
+            <h1>Pre-Approval Made Simple</h1>
+            <p class="lead">
+              Pre-approval at BH Solutions is a conversation, not pressure. We walk
+              through income, work history, and budget so you know what payment range
+              makes sense before you pick a vehicle.
             </p>
+            <div class="hero-actions">
+              <a href="tel:+15304201863" class="button button-primary">
+                Call for Pre-Approval
+              </a>
+              <a href="sms:+15304201863" class="button button-ghost">
+                Text Your Questions
+              </a>
+            </div>
           </div>
-
-          <figure class="hero-media">
-            <img src="assets/bh-hero-silverado.png"
-                 alt="BH Solutions vehicle hero image" />
-          </figure>
+          <div class="hero-media hero-media-small">
+            <div class="hero-media-inner">
+              <img
+                src="assets/bh-header-gold.png"
+                alt="BH Solutions shield logo"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- FORM -->
-      <section class="section">
-        <div class="section-shell">
-          <div class="section-header">
-            <h2 class="section-title">Pre-Approval Information</h2>
-            <p class="section-subtitle">
-              You can also call or text if you’d rather share this over the phone.
-            </p>
+      <section class="section panel">
+        <div class="shell split-grid">
+          <div>
+            <h2>What to Bring</h2>
+            <ul class="bullet-list">
+              <li>Valid driver’s license</li>
+              <li>Proof of income (paystubs, award letters, etc.)</li>
+              <li>Proof of residence (bill or document with your address)</li>
+              <li>Insurance information, if available</li>
+            </ul>
+
+            <h2>What We Look At</h2>
+            <ul class="bullet-list">
+              <li>Stability of income and length of employment</li>
+              <li>Down payment amount you’re comfortable with</li>
+              <li>Vehicle price range and payment comfort zone</li>
+              <li>Past auto history and any open loans</li>
+            </ul>
           </div>
 
-          <form class="form-card">
-            <div class="form-grid">
-              <label class="form-field">
-                <span>Full Name</span>
-                <input type="text" name="name" placeholder="First and last name" />
-              </label>
-
-              <label class="form-field">
-                <span>Phone Number</span>
-                <input type="tel" name="phone" placeholder="(530) 555-1234" />
-              </label>
-
-              <label class="form-field">
-                <span>Email</span>
-                <input type="email" name="email" placeholder="you@example.com" />
-              </label>
-
-              <label class="form-field">
-                <span>Preferred Budget Range</span>
-                <input type="text" name="budget" placeholder="$___ / month or cash price" />
-              </label>
-
-              <label class="form-field form-field-full">
-                <span>Notes (trade-in, down payment, timing, etc.)</span>
-                <textarea name="notes" rows="4"
-                  placeholder="Share anything that helps us point you in the right direction."></textarea>
-              </label>
-            </div>
-
-            <p class="form-note">
-              This form is for contact only. BH Solutions will reach out to review options
-              and collect any formal application info in person or by phone.
+          <aside class="info-card">
+            <h3>How the Conversation Works</h3>
+            <ol class="number-list">
+              <li>We review your income and bills together.</li>
+              <li>We talk through realistic payment ranges.</li>
+              <li>We match that range to the vehicles on the lot.</li>
+              <li>
+                We explain your options clearly before you sign anything.
+              </li>
+            </ol>
+            <p class="small-note">
+              Every situation is different. The goal is to keep the payment
+              comfortable and the process transparent.
             </p>
 
-            <button type="submit" class="btn btn-gold" disabled>
-              Submit (Demo Only)
-            </button>
-          </form>
-        </div>
-      </section>
-
-      <!-- CONTACT / LICENSING -->
-      <section id="contact" class="section section-contact">
-        <div class="section-shell contact-grid">
-          <div>
-            <h2 class="section-title">Need Help Right Now?</h2>
-            <p class="section-subtitle">
-              Call or text and we’ll walk through pre-approval details step-by-step.
-            </p>
-
-            <div class="contact-block">
-              <h3 class="contact-heading">BH Solutions</h3>
-              <p class="contact-lines">
-                4881 Feather River Blvd, Ste 1A<br />
-                Oroville, CA 95965
-              </p>
-              <p class="contact-lines">
-                <strong>Phone:</strong> (530) 420-1863<br />
-                <strong>Email:</strong> bhsoutions321@gmail.com
+            <div class="contact-mini">
+              <p><strong>BH Solutions Pre-Approval Desk</strong></p>
+              <p>
+                Phone: <a href="tel:+15304201863">(530) 420-1863</a><br />
+                Email:
+                <a href="mailto:bhsoutions321@gmail.com">bhsoutions321@gmail.com</a>
               </p>
             </div>
-
-            <div class="contact-logos">
-              <img src="assets/bh-logo-horizontal-gold.png" alt="BH Solutions logo" />
-              <img src="assets/logo-interlock-gold.png" alt="Ignition Interlock Services logo" />
-            </div>
-          </div>
-
-          <div>
-            <h3 class="contact-heading">Licensing &amp; Real Estate</h3>
-            <p class="contact-lines">
-              BH Solutions can also connect you with licensed real estate professionals
-              through Alliance Property Network.
-            </p>
-            <p class="contact-lines">
-              CA Dealer License #45657<br />
-              Real Estate Services: Ron Brown — CA DRE #02010327
-            </p>
-          </div>
+          </aside>
         </div>
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
-      <div class="footer-shell">
+      <div class="shell footer-inner">
         <p class="footer-meta">
           BH Solutions · 4881 Feather River Blvd, Ste 1A, Oroville, CA 95965 ·
-          California Dealer License #45657 · Real Estate Services: Ron Brown — CA DRE #02010327
+          California Dealer License #45657 · Real Estate Services: Ron Brown —
+          CA DRE #02010327
         </p>
         <p class="footer-powered">
-          <span>Powered by</span>
-          <span class="footer-brand">Dynasty Works Studio</span>
+          Powered by <span>Dynasty Works Studio</span>
         </p>
       </div>
     </footer>
-
-  </div>
-</div>
-</body>
+  </body>
 </html>
