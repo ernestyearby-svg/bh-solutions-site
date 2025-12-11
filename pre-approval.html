@@ -1,103 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>BH Solutions – Pre-Approval</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<div class="site-shell">
+  <div class="page-card">
 
-  <header class="site-header">
-    <div class="shell">
-      <nav class="main-nav">
-        <a href="index.html" class="logo">
-          <img src="assets/bh_header.png" alt="BH Solutions">
+    <!-- HEADER / NAV -->
+    <header class="site-header">
+      <div class="nav-bar">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/bh-header-gold.png" alt="BH Solutions logo" />
         </a>
-
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-
-       <ul class="nav-links" id="navLinks">
-  <li><a href="index.html">Services</a></li>
-  <li><a href="inventory.html">Inventory</a></li>
-  <li><a href="pre-approval.html">Pre-Approval</a></li>
-  <li><a href="real-estate.html">Real Estate</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="index.html#contact">Contact</a></li>
-</ul>
-
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="section section-alt">
-      <div class="shell split">
-        <div>
-          <h1 class="section-title">Start Pre-Approval</h1>
-          <p>
-            Complete the simple form below to start the pre-approval process for your
-            next vehicle. A BH Solutions team member will contact you to review options
-            and next steps.
-          </p>
-          <p>
-            You can also call us directly at <strong>(530) 420-1863</strong> if you
-            prefer to complete pre-approval by phone.
-          </p>
-        </div>
-
-        <form class="card form-card">
-          <div class="form-row">
-            <label for="name">Full Name</label>
-            <input id="name" type="text" required>
-          </div>
-
-          <div class="form-row">
-            <label for="phone">Phone</label>
-            <input id="phone" type="tel" required>
-          </div>
-
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input id="email" type="email">
-          </div>
-
-          <div class="form-row">
-            <label for="details">Vehicle or notes</label>
-            <textarea id="details" rows="4"
-              placeholder="Tell us what you're looking for, or your current situation."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-full">
-            Submit Pre-Approval Request
-          </button>
-
-          <p class="form-note">
-            This form sends your information to BH Solutions so our team can contact you.
-            It does not affect your credit score.
-          </p>
-        </form>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Services</a>
+          <a href="inventory.html" class="nav-link">Inventory</a>
+          <a href="pre-approval.html" class="nav-link nav-link-active">Pre-Approval</a>
+          <a href="real-estate.html" class="nav-link">Real Estate</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
       </div>
-    </section>
-  </main>
+    </header>
 
- <footer class="site-footer">
-  <div class="shell">
-    <p>BH Solutions · 4881 Feather River Blvd, Ste 1A, Oroville, CA 95965</p>
-    <p>
-      Phone: (530) 420-1863 ·
-      Email: <a href="mailto:bhsolutions321@gmail.com">bhsolutions321@gmail.com</a>
-    </p>
-    <p>
-      California Dealer License #45657 ·
-      Real Estate Services: Ron Brown – CA DRE #02010327
-    </p>
+    <main class="site-main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-shell">
+          <div class="hero-content">
+            <div class="hero-eyebrow">Financing Snapshot</div>
+            <h1 class="hero-title">Start Your Pre-Approval</h1>
+            <p class="hero-body">
+              Use this page as a starting point to share your basic information with BH Solutions.
+              We’ll walk through options together — no pressure, no hidden fees.
+            </p>
+          </div>
+
+          <figure class="hero-media">
+            <img src="assets/bh-hero-silverado.png"
+                 alt="BH Solutions vehicle hero image" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- FORM -->
+      <section class="section">
+        <div class="section-shell">
+          <div class="section-header">
+            <h2 class="section-title">Pre-Approval Information</h2>
+            <p class="section-subtitle">
+              You can also call or text if you’d rather share this over the phone.
+            </p>
+          </div>
+
+          <form class="form-card">
+            <div class="form-grid">
+              <label class="form-field">
+                <span>Full Name</span>
+                <input type="text" name="name" placeholder="First and last name" />
+              </label>
+
+              <label class="form-field">
+                <span>Phone Number</span>
+                <input type="tel" name="phone" placeholder="(530) 555-1234" />
+              </label>
+
+              <label class="form-field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@example.com" />
+              </label>
+
+              <label class="form-field">
+                <span>Preferred Budget Range</span>
+                <input type="text" name="budget" placeholder="$___ / month or cash price" />
+              </label>
+
+              <label class="form-field form-field-full">
+                <span>Notes (trade-in, down payment, timing, etc.)</span>
+                <textarea name="notes" rows="4"
+                  placeholder="Share anything that helps us point you in the right direction."></textarea>
+              </label>
+            </div>
+
+            <p class="form-note">
+              This form is for contact only. BH Solutions will reach out to review options
+              and collect any formal application info in person or by phone.
+            </p>
+
+            <button type="submit" class="btn btn-gold" disabled>
+              Submit (Demo Only)
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- CONTACT / LICENSING -->
+      <section id="contact" class="section section-contact">
+        <div class="section-shell contact-grid">
+          <div>
+            <h2 class="section-title">Need Help Right Now?</h2>
+            <p class="section-subtitle">
+              Call or text and we’ll walk through pre-approval details step-by-step.
+            </p>
+
+            <div class="contact-block">
+              <h3 class="contact-heading">BH Solutions</h3>
+              <p class="contact-lines">
+                4881 Feather River Blvd, Ste 1A<br />
+                Oroville, CA 95965
+              </p>
+              <p class="contact-lines">
+                <strong>Phone:</strong> (530) 420-1863<br />
+                <strong>Email:</strong> bhsoutions321@gmail.com
+              </p>
+            </div>
+
+            <div class="contact-logos">
+              <img src="assets/bh-logo-horizontal-gold.png" alt="BH Solutions logo" />
+              <img src="assets/logo-interlock-gold.png" alt="Ignition Interlock Services logo" />
+            </div>
+          </div>
+
+          <div>
+            <h3 class="contact-heading">Licensing &amp; Real Estate</h3>
+            <p class="contact-lines">
+              BH Solutions can also connect you with licensed real estate professionals
+              through Alliance Property Network.
+            </p>
+            <p class="contact-lines">
+              CA Dealer License #45657<br />
+              Real Estate Services: Ron Brown — CA DRE #02010327
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <p class="footer-meta">
+          BH Solutions · 4881 Feather River Blvd, Ste 1A, Oroville, CA 95965 ·
+          California Dealer License #45657 · Real Estate Services: Ron Brown — CA DRE #02010327
+        </p>
+        <p class="footer-powered">
+          <span>Powered by</span>
+          <span class="footer-brand">Dynasty Works Studio</span>
+        </p>
+      </div>
+    </footer>
+
   </div>
-</footer>
-
-
-
-
+</div>
+</body>
+</html>
