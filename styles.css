@@ -625,5 +625,38 @@ img[alt="Alliance Property Network logo"] {
   display: block;
   margin: 0 auto;
 }
+/* === Final home-page logo sizing === */
+
+/* Header brand logo – bigger on desktop, still clean on mobile */
+.nav-brand img.nav-logo {
+  height: 64px;
+}
+
+@media (max-width: 768px) {
+  .nav-brand img.nav-logo {
+    height: 52px;
+  }
+}
+/* Partner logo cards */
+.partner-card {
+  width: 210px;
+  height: 140px;
+}
+
+.partner-card img {
+  max-width: 80%;
+  max-height: 80px;
+}
+/* Footer/contact logos under email */
+.footer-logos img.footer-logo {
+  height: 56px;
+}
+
+@media (max-width: 768px) {
+  .footer-logos img.footer-logo {
+    height: 48px;
+  }
+}
+
 
 
