@@ -524,7 +524,7 @@ p {
   }
 
   .nav-logo {
-    height: 46px;
+    height: 56px;
   }
 
   .logo-tile img {
@@ -739,6 +739,7 @@ img[alt="Alliance Property Network logo"] {
     height: 55px !important;      /* Mobile size */
   }
 }
+
 
 
 
