@@ -870,6 +870,36 @@ img[alt="Alliance Property Network logo"] {
         height: 42px;
     }
 }
+/* ===== FINAL BH HEADER LOGO RESET ===== */
+
+.site-header .nav-brand img.site-logo {
+  height: 80px !important;   /* desktop size */
+  width: auto !important;
+  display: block;
+  object-fit: contain;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .site-header .nav-brand img.site-logo {
+    height: 68px !important;
+  }
+}
+
+/* Large phones */
+@media (max-width: 768px) {
+  .site-header .nav-brand img.site-logo {
+    height: 56px !important;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .site-header .nav-brand img.site-logo {
+    height: 44px !important;
+  }
+}
+
 
 
 
