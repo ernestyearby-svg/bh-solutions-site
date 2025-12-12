@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>BH Solutions – Pre-Approval Guide</title>
+    <title>BH Solutions – Pre-Approval</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
@@ -17,92 +17,177 @@
             class="nav-logo"
           />
         </a>
+
         <nav class="nav-main">
-          <a href="index.html" class="nav-link" data-nav="services">Services</a>
+          <a href="index.html" class="nav-link" data-nav="services">Home</a>
           <a href="inventory.html" class="nav-link" data-nav="inventory">Inventory</a>
           <a href="pre-approval.html" class="nav-link" data-nav="pre-approval">Pre-Approval</a>
           <a href="real-estate.html" class="nav-link" data-nav="real-estate">Real Estate</a>
-          <a href="index.html#contact" class="nav-link nav-link-contact">Contact</a>
+          <a href="#contact" class="nav-link nav-link-contact">Contact</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- HERO -->
-      <section class="hero hero-compact">
-        <div class="shell hero-shell hero-shell-compact">
-          <div class="hero-copy">
-            <p class="eyebrow">Financing Support</p>
-            <h1>Pre-Approval Made Simple</h1>
-            <p class="lead">
-              Pre-approval at BH Solutions is a conversation, not pressure. We walk
-              through income, work history, and budget so you know what payment range
-              makes sense before you pick a vehicle.
+      <!-- PRE-APPROVAL FORM -->
+      <section class="section panel panel-pre-approval">
+        <div class="shell split-grid">
+          <div>
+            <header class="section-header">
+              <h2>Pre-Approval Made Simple</h2>
+              <p>
+                Fill out this quick form to start your vehicle payment estimate.
+                This is a soft pre-approval request, not a hard credit pull.
+              </p>
+            </header>
+
+            <form
+              class="pre-approval-form"
+              action="mailto:bhsoutions321@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="full-name">Full Name</label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    name="Full Name"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="Phone"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="Email"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="employer">Employer</label>
+                  <input
+                    type="text"
+                    id="employer"
+                    name="Employer"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="income">Monthly Take-Home Income</label>
+                  <input
+                    type="text"
+                    id="income"
+                    name="Monthly Income"
+                    placeholder="$"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="down-payment">Estimated Down Payment</label>
+                  <input
+                    type="text"
+                    id="down-payment"
+                    name="Down Payment"
+                    placeholder="$"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="payment-range">Preferred Monthly Payment Range</label>
+                  <input
+                    type="text"
+                    id="payment-range"
+                    name="Preferred Payment Range"
+                    placeholder="$300–$450, etc."
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="vehicle-interest">Vehicle You’re Interested In</label>
+                  <input
+                    type="text"
+                    id="vehicle-interest"
+                    name="Vehicle Interest"
+                    placeholder="Year / Make / Model"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="credit">Approximate Credit Situation</label>
+                  <select id="credit" name="Credit Range">
+                    <option value="">Select one</option>
+                    <option value="excellent">Excellent (720+)</option>
+                    <option value="good">Good (660–719)</option>
+                    <option value="fair">Fair (600–659)</option>
+                    <option value="building">Rebuilding / Below 600</option>
+                  </select>
+                </div>
+
+                <div class="form-field form-field-full">
+                  <label for="notes">Additional Notes</label>
+                  <textarea
+                    id="notes"
+                    name="Notes"
+                    rows="4"
+                    placeholder="Anything else we should know (job changes, co-signer, specific needs, etc.)"
+                  ></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="button button-primary">
+                Submit Pre-Approval Request
+              </button>
+
+              <p class="form-note">
+                After you submit, BH Solutions will review your information and
+                contact you to discuss options, answer questions, and confirm
+                next steps.
+              </p>
+            </form>
+          </div>
+
+          <aside class="info-card pre-approval-sidebar">
+            <h3>What to Bring to the Lot</h3>
+            <ul class="bullet-list">
+              <li>Valid driver’s license</li>
+              <li>Most recent paystubs</li>
+              <li>Proof of residence (mail or lease)</li>
+              <li>Insurance info (if available)</li>
+            </ul>
+
+            <h3 class="info-subheading">Need Help Right Now?</h3>
+            <p>
+              Call or text
+              <a href="tel:+15304201863">(530) 420-1863</a>
+              if you’d rather go over this by phone.
             </p>
-            <div class="hero-actions">
-              <a href="tel:+15304201863" class="button button-primary">
-                Call for Pre-Approval
-              </a>
-              <a href="sms:+15304201863" class="button button-ghost">
-                Text Your Questions
-              </a>
-            </div>
-          </div>
-          <div class="hero-media hero-media-small">
-            <div class="hero-media-inner">
-              <img
-                src="assets/bh-header-gold.png"
-                alt="BH Solutions shield logo"
-              />
-            </div>
-          </div>
+          </aside>
         </div>
       </section>
 
-      <section class="section panel">
-        <div class="shell split-grid">
-          <div>
-            <h2>What to Bring</h2>
-            <ul class="bullet-list">
-              <li>Valid driver’s license</li>
-              <li>Proof of income (paystubs, award letters, etc.)</li>
-              <li>Proof of residence (bill or document with your address)</li>
-              <li>Insurance information, if available</li>
-            </ul>
-
-            <h2>What We Look At</h2>
-            <ul class="bullet-list">
-              <li>Stability of income and length of employment</li>
-              <li>Down payment amount you’re comfortable with</li>
-              <li>Vehicle price range and payment comfort zone</li>
-              <li>Past auto history and any open loans</li>
-            </ul>
-          </div>
-
-          <aside class="info-card">
-            <h3>How the Conversation Works</h3>
-            <ol class="number-list">
-              <li>We review your income and bills together.</li>
-              <li>We talk through realistic payment ranges.</li>
-              <li>We match that range to the vehicles on the lot.</li>
-              <li>
-                We explain your options clearly before you sign anything.
-              </li>
-            </ol>
-            <p class="small-note">
-              Every situation is different. The goal is to keep the payment
-              comfortable and the process transparent.
-            </p>
-
-            <div class="contact-mini">
-              <p><strong>BH Solutions Pre-Approval Desk</strong></p>
-              <p>
-                Phone: <a href="tel:+15304201863">(530) 420-1863</a><br />
-                Email:
-                <a href="mailto:bhsoutions321@gmail.com">bhsoutions321@gmail.com</a>
-              </p>
-            </div>
-          </aside>
+      <!-- Simple contact anchor so the CONTACT button still works -->
+      <section id="contact" class="section panel panel-contact-ghost">
+        <div class="shell">
+          <p>
+            For general questions, call or text
+            <a href="tel:+15304201863">(530) 420-1863</a>
+            or email
+            <a href="mailto:bhsoutions321@gmail.com">bhsoutions321@gmail.com</a>.
+          </p>
         </div>
       </section>
     </main>
@@ -111,7 +196,7 @@
       <div class="shell footer-inner">
         <p class="footer-meta">
           BH Solutions · 4881 Feather River Blvd, Ste 1A, Oroville, CA 95965 ·
-          California Dealer License #45657 · Real Estate Services: Ron Brown —
+          California Dealer License #45657 · Real Estate Services: Ron Brown –
           CA DRE #02010327
         </p>
         <p class="footer-powered">
