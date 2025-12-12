@@ -1016,6 +1016,77 @@ img[alt="Alliance Property Network logo"] {
   .nav-brand { min-width: 0; }
   .nav-logo { height: 38px; max-width: 320px; }
 }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: radial-gradient(circle at top left, #1a1c26 0%, #0b0c10 55%, #05060a 100%);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 0.9rem 0;
+}
+
+.nav-brand {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.nav-logo {
+  height: 44px;         /* adjust 40–52 if needed */
+  width: auto;
+  display: block;
+  background: transparent;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: rgba(255,255,255,0.82);
+  text-decoration: none;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 0.4rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: rgba(255,255,255,0.95);
+  border-bottom-color: rgba(212, 175, 55, 0.8);
+}
+
+.nav-cta {
+  color: rgba(255,255,255,0.90);
+  text-decoration: none;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 0.55rem 1.05rem;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 175, 55, 0.55);
+}
+
+.nav-cta:hover {
+  border-color: rgba(212, 175, 55, 0.9);
+}
+
+@media (max-width: 900px) {
+  .header-inner { gap: 0.9rem; }
+  .site-nav { gap: 1.1rem; flex-wrap: wrap; justify-content: flex-end; }
+  .nav-logo { height: 40px; }
+}
+
 
 
 
