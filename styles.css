@@ -739,6 +739,22 @@ img[alt="Alliance Property Network logo"] {
     height: 55px !important;      /* Mobile size */
   }
 }
+/* === HEADER LOGO SIZE FIX === */
+
+.nav-brand .nav-logo {
+  height: 42px;       /* try 42–48; bump up if you want it even larger */
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* keep logo from getting too huge on very small screens */
+@media (max-width: 480px) {
+  .nav-brand .nav-logo {
+    height: 32px;
+  }
+}
+
 
 
 
