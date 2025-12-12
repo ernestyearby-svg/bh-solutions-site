@@ -754,6 +754,93 @@ img[alt="Alliance Property Network logo"] {
     height: 32px;
   }
 }
+/* === PRE-APPROVAL FORM STYLES === */
+
+.panel-pre-approval {
+  padding: 4rem 0;
+}
+
+.panel-pre-approval .split-grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media (min-width: 960px) {
+  .panel-pre-approval .split-grid {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  }
+}
+
+.pre-approval-form {
+  margin-top: 1.5rem;
+}
+
+.pre-approval-form .form-grid {
+  display: grid;
+  gap: 1.25rem 1.5rem;
+}
+
+@media (min-width: 720px) {
+  .pre-approval-form .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pre-approval-form .form-field-full {
+    grid-column: 1 / -1;
+  }
+}
+
+.form-field label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  font: inherit;
+  background: #fff;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.04);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.pre-approval-form .button {
+  margin-top: 1.5rem;
+}
+
+.form-note {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.pre-approval-sidebar {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 960px) {
+  .pre-approval-sidebar {
+    margin-top: 0;
+  }
+}
+
+/* small contact anchor section */
+.panel-contact-ghost {
+  padding: 2rem 0 3rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
 
 
 
