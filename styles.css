@@ -899,6 +899,35 @@ img[alt="Alliance Property Network logo"] {
     height: 44px !important;
   }
 }
+/* === BH Solutions header logo – global === */
+.nav-logo {
+  height: 64px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Tablet / small laptop */
+@media (max-width: 1024px) {
+  .nav-logo {
+    height: 56px;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .nav-logo {
+    height: 44px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .nav-logo {
+    height: 36px;
+  }
+}
+
 
 
 
