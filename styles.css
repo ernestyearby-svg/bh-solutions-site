@@ -1086,6 +1086,37 @@ img[alt="Alliance Property Network logo"] {
   .site-nav { gap: 1.1rem; flex-wrap: wrap; justify-content: flex-end; }
   .nav-logo { height: 40px; }
 }
+/* ==================================================
+   UNDER CONSTRUCTION / ADMINISTRATIVE NOTICE
+   Safe global banner – does not affect other styles
+   ================================================== */
+
+.site-notice {
+  width: 100%;
+  background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
+  color: #ffffff;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.site-notice .notice-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.site-notice h1 {
+  font-size: 2.3rem;
+  margin-bottom: 18px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.site-notice p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
 
 
 
