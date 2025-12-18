@@ -1117,6 +1117,48 @@ img[alt="Alliance Property Network logo"] {
   opacity: 0.85;
 }
 
+/* ==================================================
+   GLOBAL UNDER-CONSTRUCTION LOCK
+   Blocks all interaction site-wide
+   ================================================== */
+
+.site-notice {
+  width: 100%;
+  background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
+  color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 10000;
+}
+
+.site-notice .notice-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.site-notice h1 {
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.site-notice p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* FULL PAGE INTERACTION LOCK */
+.site-lock {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  pointer-events: all;
+}
+
 
 
 
