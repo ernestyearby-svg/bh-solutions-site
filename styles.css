@@ -1085,6 +1085,22 @@ img[alt="Alliance Property Network logo"] {
   .header-inner { gap: 0.9rem; }
   .site-nav { gap: 1.1rem; flex-wrap: wrap; justify-content: flex-end; }
   .nav-logo { height: 40px; }
+
+}.readable-box{
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 28px 26px;
+  background: rgba(0,0,0,0.62);
+  color: #F2E8D8;
+  border: 1px solid rgba(227, 199, 155, 0.35);
+  border-radius: 14px;
+  line-height: 1.6;
+}
+
+.readable-box h1,
+.readable-box h2,
+.readable-box h3{
+  color: #E3C79B;
 }
 
 .site-notice {
@@ -1112,6 +1128,7 @@ img[alt="Alliance Property Network logo"] {
   line-height: 1.6;
   opacity: 0.85;
 }
+
 
 
 
