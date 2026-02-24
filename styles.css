@@ -1129,6 +1129,31 @@ img[alt="Alliance Property Network logo"] {
   opacity: 0.85;
 }
 
+body[data-page="auctions"] {
+background-color: #f4f6f9;
+color: #1b263b;
+}
+
+body[data-page="auctions"] .section {
+background: #ffffff;
+padding: 80px 20px;
+}
+
+body[data-page="auctions"] .section-dark {
+background: #1b263b;
+color: #ffffff;
+padding: 80px 20px;
+}
+
+body[data-page="auctions"] h1,
+body[data-page="auctions"] h2 {
+color: #1b263b;
+}
+
+body[data-page="auctions"] .section-dark h2 {
+color: #ffffff;
+}
+
 
 
 
