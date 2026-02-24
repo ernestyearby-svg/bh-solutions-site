@@ -1153,6 +1153,31 @@ color: #1b263b;
 body[data-page="auctions"] .section-dark h2 {
 color: #ffffff;
 }
+body[data-page="auctions"] .section:first-of-type {
+background: linear-gradient(to bottom, #122b47, #0f1f33);
+color: white;
+padding: 100px 20px;
+text-align: center;
+}
+
+body[data-page="auctions"] .section:first-of-type h1 {
+font-size: 44px;
+margin-bottom: 15px;
+color: white;
+}
+
+body[data-page="auctions"] .hero-sub {
+font-size: 18px;
+color: #cbd5e1;
+margin-bottom: 40px;
+}
+
+body[data-page="auctions"] .feature-list {
+max-width: 700px;
+margin: 0 auto;
+text-align: left;
+line-height: 1.9;
+}
 
 
 
