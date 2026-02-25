@@ -1,12 +1,23 @@
-// Minimal JS: highlight active nav link based on data-page on <body>
+// Mobile nav toggle + footer year
+(function () {
+const toggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector(".nav");
+const year = document.getElementById("year");
 
-document.addEventListener("DOMContentLoaded", () => {
-  const currentPage = document.body.dataset.page;
-  if (!currentPage) return;
+if (year) year.textContent = new Date().getFullYear();
 
-  document.querySelectorAll(".nav-link[data-nav]").forEach((link) => {
-    if (link.dataset.nav === currentPage) {
-      link.classList.add("is-active");
-    }
-  });
+if (!toggle || !nav) return;
+
+toggle.addEventListener("click", () => {
+const open = nav.classList.toggle("open");
+toggle.setAttribute("aria-expanded", open ? "true" : "false");
 });
+
+// Close menu after click (mobile)
+nav.querySelectorAll("a").forEach((a) => {
+a.addEventListener("click", () => {
+nav.classList.remove("open");
+toggle.setAttribute("aria-expanded", "false");
+});
+});
+})();
