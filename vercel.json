@@ -2,3 +2,8 @@
 "buildCommand": "echo \"no build\"",
 "outputDirectory": "."
 }
+
+{
+"cleanUrls": true,
+"trailingSlash": true
+}
