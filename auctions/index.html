@@ -1,80 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BH Solutions Auto Auctions</title>
-  <link rel="stylesheet" href="/styles.css?v=999" />
-<script defer src="/script.js?v=999"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BH Solutions Auto Auctions</title>
+
+<!-- ✅ Absolute paths so it works inside /auctions/ -->
+<link rel="stylesheet" href="/styles.css" />
+<script defer src="/script.js"></script>
+
+<!-- Optional: small safety styles so the page never looks blank if styles.css fails -->
+<style>
+body { font-family: Arial, sans-serif; margin: 0; }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.page-title { font-size: 28px; margin: 0 0 8px; }
+.page-sub { opacity: .8; margin: 0 0 18px; }
+.card { border: 1px solid rgba(0,0,0,.12); border-radius: 12px; padding: 16px; margin: 14px 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.btn { display: inline-block; padding: 10px 14px; border-radius: 10px; border: 1px solid rgba(0,0,0,.2); text-decoration: none; }
+.btn.primary { background: #111; color: #fff; border-color: #111; }
+.muted { opacity: .75; font-size: 14px; }
+.logo-wrap { display:flex; align-items:center; gap:12px; }
+.logo-wrap img { height: 38px; width: auto; display:block; }
+.topbar { padding: 14px 18px; border-bottom: 1px solid rgba(0,0,0,.10); }
+.nav { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; }
+.nav-links { display:flex; flex-wrap:wrap; gap:12px; }
+.nav-links a { text-decoration:none; opacity:.85; }
+.nav-links a:hover { opacity:1; }
+.note { background: rgba(0,0,0,.04); padding: 12px 14px; border-radius: 10px; }
+table { width:100%; border-collapse: collapse; }
+th, td { padding: 10px; text-align:left; border-bottom: 1px solid rgba(0,0,0,.08); }
+th { font-weight: 700; }
+</style>
 </head>
 
 <body data-page="auctions">
 
-  <header class="site-header">
-    <div class="shell header-inner">
-      <a href="/" class="nav-brand">
-        <img src="../assets/bh-header-gold.png" alt="BH Solutions" class="nav-logo" />
-      </a>
+<!-- Header / Nav -->
+<header class="topbar">
+<div class="nav">
+<div class="logo-wrap">
+<!-- ✅ Absolute path to asset -->
+<a href="/index.html" aria-label="BH Solutions Home">
+<img src="/assets/bh-header-gold.png" alt="BH Solutions" />
+</a>
+<div class="muted">Auto Auctions</div>
+</div>
 
-      <nav class="nav-links">
-        <a href="/" class="nav-link">Home</a>
-        <a href="/inventory.html" class="nav-link">Inventory</a>
-        <a href="/pre-approval.html" class="nav-link">Pre-Approval</a>
-        <a href="/real-estate.html" class="nav-link">Real Estate</a>
-        <a href="/about.html" class="nav-link">About</a>
-        <a href="/auctions/" class="nav-link active">Auctions</a>
-      </nav>
-    </div>
-  </header>
+<nav class="nav-links" aria-label="Primary">
+<a href="/index.html">Home</a>
+<a href="/inventory.html">Inventory</a>
+<a href="/auctions/index.html" style="font-weight:700;">Auctions</a>
+<a href="/pre-approval.html">Pre-Approval</a>
+<a href="/real-estate.html">Real Estate</a>
+<a href="/about.html">About</a>
+<a href="/index.html#contact">Contact</a>
+</nav>
+</div>
+</header>
 
-  <section class="section">
-    <div class="shell">
-      <h1>BH Solutions Auto Auctions</h1>
-      <p class="hero-sub">
-        Dealer-Only Online Timed Auctions  
-        Serving Oroville • Chico • North Valley • Bay Area • Fresno • Bakersfield
-      </p>
+<!-- Main Content -->
+<main class="container">
+<h1 class="page-title">BH Solutions Auto Auctions</h1>
+<p class="page-sub">
+Weekly auction-style vehicle opportunities. View listings, bid instructions, and inspection details.
+</p>
 
-      <h2>Why This Lane Works</h2>
-      <ul class="feature-list">
-        <li>No transport expense unless sold</li>
-        <li>Reserve control — you decide the floor</li>
-        <li>Verified licensed dealer bidders only</li>
-        <li>48-hour payment discipline</li>
-        <li>Structured arbitration</li>
-      </ul>
-    </div>
-  </section>
+<div class="note">
+<strong>Fast note:</strong> If you’re seeing a blank page, it’s usually because CSS/JS paths were relative.
+This page uses <strong>absolute paths</strong> so it will load correctly on Vercel.
+</div>
 
-  <section id="register" class="section section-dark">
-    <div class="shell">
-      <h2>Founding Dealer Registration</h2>
+<!-- Actions -->
+<div class="card">
+<div class="grid">
+<div>
+<h3 style="margin:0 0 6px;">Get Approved to Bid</h3>
+<p class="muted" style="margin:0 0 10px;">
+Complete the pre-approval form so we can verify identity and payment method.
+</p>
+<a class="btn primary" href="/pre-approval.html">Start Pre-Approval</a>
+</div>
 
-      <form action="https://formsubmit.co/bhsolutions321@gmail.com" method="POST" class="form">
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_subject" value="BH Auctions Registration" />
+<div>
+<h3 style="margin:0 0 6px;">How Bidding Works</h3>
+<p class="muted" style="margin:0 0 10px;">
+Reserve, deposit rules, pickup windows, and winning bid confirmation.
+</p>
+<a class="btn" href="#how-it-works">View Steps</a>
+</div>
 
-        <input type="text" name="Dealer Business Name" placeholder="Dealer Business Name" required />
-        <input type="text" name="Contact Name" placeholder="Contact Name" required />
-        <input type="text" name="Dealer License Number" placeholder="Dealer License Number" required />
-        <input type="email" name="Email" placeholder="Email Address" required />
-        <input type="tel" name="Phone" placeholder="Phone Number" required />
+<div>
+<h3 style="margin:0 0 6px;">Need a Transport?</h3>
+<p class="muted" style="margin:0 0 10px;">
+We can deliver or coordinate transport on winning bids.
+</p>
+<a class="btn" href="/index.html#contact">Contact Us</a>
+</div>
+</div>
+</div>
 
-        <button type="submit" class="btn-gold">
-          Submit Registration
-        </button>
-      </form>
-    </div>
-  </section>
+<!-- Listings (Sample) -->
+<section class="card" id="listings">
+<h2 style="margin:0 0 10px;">Active Listings</h2>
+<p class="muted" style="margin:0 0 14px;">
+Replace these sample rows with your real auction vehicles. If you want, we can make these pull from a simple JSON file later.
+</p>
 
-  <footer class="site-footer">
-    <div class="shell">
-      <p>
-        BH Solutions Auto Auctions is a licensed California dealer-operated wholesale exchange.
-      </p>
-    </div>
-  </footer>
+<div style="overflow:auto;">
+<table>
+<thead>
+<tr>
+<th>Lot</th>
+<th>Vehicle</th>
+<th>Location</th>
+<th>Bid Deadline</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#101</td>
+<td>2016 Ford F-150 XLT</td>
+<td>Oroville, CA</td>
+<td>Friday 6:00 PM</td>
+<td>Open</td>
+</tr>
+<tr>
+<td>#102</td>
+<td>2014 Chevy Silverado LT</td>
+<td>Chico, CA</td>
+<td>Friday 6:00 PM</td>
+<td>Open</td>
+</tr>
+<tr>
+<td>#103</td>
+<td>2012 Toyota Camry SE</td>
+<td>Oroville, CA</td>
+<td>Friday 6:00 PM</td>
+<td>Open</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 
-  <script src="script.js"></script>
+<!-- How it Works -->
+<section class="card" id="how-it-works">
+<h2 style="margin:0 0 10px;">How It Works</h2>
+<ol style="margin:0; padding-left: 18px;">
+<li>Pick a vehicle from the listings.</li>
+<li>Submit pre-approval (required for bidding).</li>
+<li>Schedule inspection if available (optional).</li>
+<li>Place bid via the instructions we provide after approval.</li>
+<li>Winner gets confirmation + payment instructions.</li>
+<li>Pickup or delivery arranged within the agreed window.</li>
+</ol>
+<p class="muted" style="margin:12px 0 0;">
+Want “Place Bid” buttons? We can add them once we decide if bids happen by call/text, form, or a simple bid portal.
+</p>
+</section>
+
+<!-- CTA -->
+<section class="card">
+<h2 style="margin:0 0 10px;">Ready to Bid?</h2>
+<p class="muted" style="margin:0 0 12px;">
+Get approved first. It takes minutes and protects both sides.
+</p>
+<a class="btn primary" href="/pre-approval.html">Start Pre-Approval</a>
+</section>
+</main>
+
+<footer class="container" style="padding-top: 8px; padding-bottom: 40px;">
+<div class="muted">
+© <span id="year"></span> BH Solutions. All rights reserved.
+</div>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</footer>
+
 </body>
 </html>
